@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+    }
+
+    .wrapper {
+        width: 80%;
+        margin: 0 auto;
+        border: 1px solid #000;
+        background-color: azure;
+        overflow: hidden;
+    }
+
+    .wrapper .col {
+        float: left;
+        width: 25%;
+    }
+
+    .wrapper .col .box {
+        padding: 10px;
+        margin: 5px;
+        background-color: #fff;
+    }
+
+    .box img {
+        width: 100%;
+    }
+</style>
+
+
+<body>
+
+    <ul class="wrapper">
+        <li class="col">
+            <div class="box">
+                <img src="./image/1.jpg" alt="">
+                <p>第一张图片</p>
+            </div>
+        </li>
+        <li class="col">
+            <div class="box">
+                <img src="./image/2.jpg" alt="">
+                <p>第二张图片</p>
+            </div>
+        </li>
+        <li class="col">
+            <div class="box">
+                <img src="./image/3.jpg" alt="">
+                <p>第三张图片</p>
+            </div>
+        </li>
+        <li class="col">
+            <div class="box">
+                <img src="./image/4.jpg" alt="">
+                <p>第四张图片</p>
+            </div>
+        </li>
+    </ul>
+
+    <script src="./index.js"></script>
+    <script>
+        // ajax('GET',
+        // 'https://open.duyiedu.com/api/student/findAll',
+        // 'appkey=luweihua_1571882657924',
+        // function(res){
+        //     console.log(res);
+        // })
+
+
+        //获取数据
+        var page = 1;
+
+        function getData() {
+            ajax("GET", "http://localhost:3000/data", "page=" + page, function (res) {
+                renderDom(res);
+                lock = false;
+                if (res.length == 0) {
+                    lock = true;
+                }
+                page++;
+            })
+        }
+
+        //渲染页面
+        function renderDom(data) {
+            var oLi = document.getElementsByClassName('col');
+            var imgWidth = oLi[0].offsetWidth - 20 - 10;
+            data.forEach(function(item) {
+                var minLiObj = getMinLi();
+                var oDiv = document.createElement("div");
+                oDiv.className = "box";
+                var oImg = Image();
+                oImg.src = item.img;
+                // item.width / item.height = img.width / img.height
+                oImg.Height = (imgWidth * item.height) / item.width;
+                var oP = document/createElement('p');
+                oP.innerText = item.desc;
+                oDiv.appendChild(oImg);
+                oDiv.appendChild(oP);
+                oLi[minLiObj.minIndex].appendChild(oDiv);
+            });
+        }
+
+        function getMinLi() {
+            var oli = document.getElementsByClassName("col");
+            var minIndex = 0;
+            var minHeight = oLi[0].offsetHeight;
+            for (var i = 0; i < oli.length; i++) {
+                if (oLi[i].offsetHeight < minHeight) {
+                    minHeight = oLi[i].offsetHeight;
+                    minIndex = i;
+                }
+            }
+            return {
+                minIndex: minIndex,
+                minHeight: minHeight
+            };
+        }
+
+        var lock = false;
+        window.onscroll = function(){
+            var minHeight = getMinLi().minHeight;
+            var scrollTop = document.documentElement.scrollTop;
+            var clientHeight = document.documentElement.clientHeight;
+            if(minHeight < clientHeight + scrollTop){
+                if(!lock){
+                    lock = true;
+                    getData();
+                }
+            }
+        }
+
+        getData();
+    </script>
+</body>
+
+</html>

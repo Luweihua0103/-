@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>修改密码</title>
+		<script src="js/public.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/revamp.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/cookie.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="css/public.css" />
+		<link rel="stylesheet" type="text/css" href="css/revamp.css" />
+	</head>
+
+	<body style="background:#fff;">
+		<!--******************************header********************************-->
+		<div class="header" id="head"></div>
+		<!--******************************proNav********************************-->
+		<div class="pro_nav">
+			<a href="user.html">我的账户</a> > <span>修改密码</span>
+		</div>
+		<!--******************************main********************************-->
+		<div class="user_main">
+			<!--**********左侧导航**************-->
+			<div class="user_left">
+				<div class="head_box">
+					<p><img src="img/user/userBear.jpg" /></p>
+					<p>130****3522 </p>
+					<p><i>v1</i>普通会员</p>
+					<span></span>
+				</div>
+				<div class="usernav_box">
+					<ul>
+						<li class="tit">交易记录</li>
+						<li><a href="formManage.html">我的订单</a></li>
+						<li><a href="###">退货管理</a></li>
+						<li class="tit">我的关注</li>
+						<li><a href="collect.html">我的收藏</a></li>
+						<li><a href="###">我的咨询</a></li>
+						<li><a href="###">我的评论</a></li>
+						<li class="tit">我的帐户</li>
+						<li><a href="user.html">帐户余额</a></li>
+						<li><a href="user.html">我的麦豆</a></li>
+						<li><a href="###">我的优惠券</a></li>
+						<li><a href="userCenter.html">个人资料</a></li>
+						<li><a href="site.html">地址管理</a></li>
+						<li class="hover"><a href="revamp.html">帐户安全</a></li>
+					</ul>
+				</div>
+			</div>
+			<!--*********************右侧内容************************-->
+<div class="userRight">
+
+	<!--添加优惠券-->
+	<div style="height: 596px;" class="userListDiv noTopBorder">
+		<div class="titDiv">
+			<h5>修改密码</h5>
+		</div>
+
+		<div class="myAdd minHeight">
+			<form action="index.html" onsubmit="return test()">
+				<input id="userid" name="userid" value="" type="hidden">
+				<input id="code" name="code" value="" type="hidden">
+				<table style="margin-top:20px;" border="0" cellpadding="0" cellspacing="0" width="100%">
+					<tbody>
+						<tr>
+							<td style="line-height:34px;height:34px;" align="right" valign="top" width="20%"><i>*</i>原来的密码：</td>
+							<td align="left" width="80%">
+								<input id="Passwordold" name="pwdold" value="" max="20" min="6"  size="20" type="password">
+								<span class="red" id="PasswordoldTip"></span>
+							</td>
+						</tr>
+						<tr>
+							<td style="line-height:34px;height:34px;" align="right" valign="top"><i>*</i>请设置密码：</td>
+							<td align="left">
+								<input id="MUserInfo_LogonPwd" name="pwd1" value=""  max="20" min="6" " size="20" type="password">
+								<span class="rp2" id="MUserInfo_LogonPwdTip"></span>
+							</td>
+						</tr>
+						<tr>
+							<td style="line-height:34px;height:34px;" align="right" valign="top"><i>*</i>请再次确认：</td>
+							<td align="left">
+								<input id="pwd2" name="pwd2" maxlength="25" require="true" datatype="Repeat,Require" operator="Equal" requiremsg="密码不能为空" repeatmsg="两次输入的密码不一致，请重新输入。" to="pwd1" onblur="cr.reaptpwd()" size="20" type="password">
+								<span class="red" id="pwd2Tip"></span>
+							</td>
+						</tr>
+						<tr>
+							<td align="right"></td>
+							<td align="left" height="60">
+								<input name="button" class="redBtn mmBtn" id="button" value="修改" type="submit"  />
+							</td>
+						</tr>
+						<tr>
+							<td colspan="2" style="padding-left:60px;">如果遇到问题，请联系客服中心：<span>400 6666 600</span> 或E-mail:<span>kf@staff.m6go.com</span></td>
+						</tr>
+					</tbody>
+				</table>
+			</form>
+
+			<!--myOrderBox end-->
+		</div>
+
+	</div>
+
+</div>
+
+		</div>
+		<!--******************************footer********************************-->
+		<div id="footer"></div>
+	</body>
+
+</html>

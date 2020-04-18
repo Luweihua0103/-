@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<link rel="stylesheet" type="text/css" href="css/public.css"/>
+	<script src="js/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/cookie.js" type="text/javascript" charset="utf-8"></script>
+	<body>
+		
+		
+<!--*************************************广告***********************************-->
+<div class="top_adv">
+	<img src="img/index/50_147.jpg" />
+	<span>关闭</span>
+</div>		
+<!--*************************************头部开始***********************************-->
+<div class="top_k">
+	<div class="top" style="width:990px;margin:0 auto;">
+		<div class="top_left" style="width:560px;">
+			<h2></h2>
+			<span>麦乐购首页 欢迎光临麦乐购</span>
+			<h3>
+				<a class="t_login" href="login.html">请登录 </a><a class="t_register" href="register.html">免费注册</a>
+				<span>其他登录方式：
+					<a class="login_qq" href="###"></a>
+					<a class="login_pay" href="###"></a>
+					<a class="login_360" href="###"></a>
+					<a class="login_sian" href="###"></a>
+				</span>
+			</h3>
+		</div>
+		<ul class="top_right">
+			<li class="my_mai"><a href="###">我的麦乐购</a><i></i>
+				<ul>
+					<li><a href="formManage.html">我的订单</a></li>
+					<li><a href="user.html">我的账户</a></li>
+					<li><a href="###">麦豆兑换</a></li>
+					<li><a href="###">我的优惠劵</a></li>
+					<li><a href="collect.html">我的收藏</a></li>
+					<li><a href="###">幸运刮刮卡</a></li>
+				</ul>
+			</li>
+			<li class="sc_mai"><i></i><a href="###">收藏麦乐购</a></li>
+			<li class="mami_mai"><a href="###">妈妈赚钱计划</a></li>
+			<li class="phone_mai"><i></i><a href="###">手机麦乐购</a>
+				<img src="img/index/app.jpg" />
+			</li>
+		</ul>
+	</div>
+</div>
+<!--*************************************头部结束***********************************-->
+
+	</body>
+	<script type="text/javascript" charset="utf-8">
+		$(function(){
+			close();//关闭广告
+			topShow();//顶部效果
+			
+			var $username = getCookie('username');
+			var $str1 = getCookie('username').substr(0,3);
+			var $str2 = getCookie('username').substr(7,10);
+			
+			if(getCookie('judge') == 1){
+				$('.t_login').html('<i>'+$str1+'****'+$str2+'</i><em id="exit" >退出</em>');
+				$('.t_login').attr('href','###');
+			}else{
+				$('.t_login').html('<i>请登录</i>');
+			}
+			
+			$("#exit").on("click",function(){
+				updateCookie("judge",0);
+				window.location.reload();//刷新当前页面.
+			});
+			});
+//广告效果
+function close(){
+	$('.top_adv > span').click(function(){
+		$('.top_adv').css('display','none');
+	})
+}
+//顶部效果
+function topShow(){
+	$('.my_mai').hover(function(){
+		$(this).find('ul').stop().slideDown(200);
+		$(this).find('i').addClass('m_hover');
+	},function(){
+		$(this).find('ul').stop().slideUp(200);
+		$(this).find('i').removeClass('m_hover');
+	});
+	$('.phone_mai').hover(function(){
+		$(this).find('img').stop().slideDown(200);
+	},function(){
+		$(this).find('img').stop().slideUp(200);
+	});
+}
+
+	</script>
+</html>

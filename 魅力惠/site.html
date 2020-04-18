@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>地址管理</title>
+		<script src="js/public.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript" src="js/area.js"></script>
+		<script type="text/javascript" src="js/location.js"></script>
+		<script type="text/javascript" src="js/select2.js"></script>
+		<script type="text/javascript" src="js/select2_locale_zh-CN.js"></script>
+		<script src="js/cookie.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="css/public.css" />
+		<link rel="stylesheet" type="text/css" href="css/site.css" />
+		<link href="css/common.css" rel="stylesheet"/>
+		<link href="css/select2.css" rel="stylesheet"/>
+	</head>
+
+	<body style="background:#fff;">
+		<!--******************************header********************************-->
+		<div class="header" id="head"></div>
+		<!--******************************proNav********************************-->
+		<div class="pro_nav">
+			<a href="user.html">我的账户</a> > <span>地址管理</span>
+		</div>
+		<!--******************************main********************************-->
+		<div class="user_main">
+			<!--**********左侧导航**************-->
+			<div class="user_left">
+				<div class="head_box">
+					<p><img src="img/user/userBear.jpg" /></p>
+					<p>130****3522 </p>
+					<p><i>v1</i>普通会员</p>
+					<span></span>
+				</div>
+				<div class="usernav_box">
+					<ul>
+						<li class="tit">交易记录</li>
+						<li><a href="formManage.html">我的订单</a></li>
+						<li><a href="###">退货管理</a></li>
+						<li class="tit">我的关注</li>
+						<li><a href="collect.html">我的收藏</a></li>
+						<li><a href="###">我的咨询</a></li>
+						<li><a href="###">我的评论</a></li>
+						<li class="tit">我的帐户</li>
+						<li><a href="user.html">帐户余额</a></li>
+						<li><a href="user.html">我的麦豆</a></li>
+						<li><a href="###">我的优惠券</a></li>
+						<li><a href="userCenter.html">个人资料</a></li>
+						<li class="hover"><a href="site.html">地址管理</a></li>
+						<li><a href="revamp.html">帐户安全</a></li>
+					</ul>
+				</div>
+			</div>
+			<!--*********************右侧内容************************-->
+			<div class="userRight">
+				<div style="height: 607px;" class="userListDiv noTopBorder">
+					<div class="titDiv">
+						<h5>地址管理</h5>
+					</div>
+				<div class="dizhi_k">
+					<div class="dizhi">
+					  <center>
+					    <select id="loc_province" style="width:120px;">
+					    </select>
+					    <select id="loc_city" style="width:120px; margin-left: 10px">
+					    </select>
+					    <select id="loc_town" style="width:120px;margin-left: 10px">
+					    </select>
+					    <br>
+					    <br>
+					    <br>
+					    <br>
+					    <input type="button" id="btnval" value="确定" style="padding:5px 15px;"/>
+					    <input type="button" id="btntext" value="取消" style="padding:5px 15px;" />
+					  </center>
+					</div>
+					<div class="clear"></div>
+				</div>
+					<div class="myOrderBox">
+						
+						<input value="+ 新建收货地址" class="redBtn" style="padding:8px 30px;" type="button">
+						<div class="clear"></div>
+
+						<div class="addList">
+
+							<div class="addNote" style="block">默认地址</div>
+							<div class="close"></div>
+							<div>
+								<p class="divL pL">收货人：</p>
+								<p class="divL pR" id="shuser">闫超威</p>
+								<div class="clear"></div>
+							</div>
+							<div>
+								<p class="divL pL">收货地址：</p>
+								<p class="divL pR" id="dizhi">北京 北京市 海淀区 </p>
+								<div class="clear"></div>
+							</div>
+
+							<div style="clear:both;">
+								<p class="divL pL">手机：</p>
+								<p class="divL pR"> 130****3522</p>
+								<div class="clear"></div>
+							</div>
+							<div>
+								<p class="divL pL">通关资料：</p>
+								<p class="divL pR">身份证
+								</p>
+								<div class="clear"></div>
+
+								<div style="display:none;" class="addPhoto">
+									<a style="border:1px solid #09f;" class="a1" href="javascript:;"><img src="image/pic/logo131_60.jpg"></a>
+									<a class="a2" href="javascript:;"><img src="image/pic/logoF4_1.jpg"></a>
+									<div class="winClose"></div>
+								</div>
+							</div>
+							<div class="addEdit">
+								<a href="###" class="aa">设为默认地址</a>
+							</div>
+							<div class="clear"></div>
+						</div>
+					
+						<div class="clear"></div>
+						<!--myOrderBox end-->
+					</div>
+				</div>
+				<!---->
+			</div>
+
+		</div>
+		<div class="clear"></div>
+		<!--******************************footer********************************-->
+		<div id="footer"></div>
+	</body>
+	<script type="text/javascript">
+		$('#head').load('header.html');
+		$('#footer').load('footerAll.html');
+		
+		$('.redBtn').click(function(){
+		$('.dizhi_k').css('display','block');
+		});
+		$('#btntext').click(function(){
+			$('.dizhi_k').css('display','none');
+		});
+		$('#btnval').click(function(){
+		
+		var $username = getCookie('username');
+		var $str1 = getCookie('username').substr(0,3);
+		var $str2 = getCookie('username').substr(7,10);
+		if($('#loc_province').val() == 1992 && $('#loc_city').val() == 2136 && $('#loc_town').val()){
+			addCookie('sheng','山东省',7);
+			addCookie('shi','济宁市',7);
+			addCookie('xian','金乡县',7);
+			var $obj = $("<div class='addList'><div class='addNote' style='display:none'>默认地址</div><div class='close'></div><div><p class='divL pL'>收货人：</p><p class='divL pR' id='shuser'>闫超威</p>	<div class='clear'></div></div><div><p class='divL pL'>收货地址：</p><p class='divL pR' id='dizhi'>"+getCookie('sheng')+getCookie('shi')+getCookie('xian')+" </p><div class='clear'></div></div><div style='clear:both;'><p class='divL pL'>手机：</p><p class='divL pR'> 130****3522</p>	<div class='clear'></div></div><div><p class='divL pL'>通关资料：</p><p class='divL pR'>身份证</p><div class='clear'></div><div style='display:none;' class='addPhoto'><a style='border:1px solid #09f;' class='a1' href='###'><img src='image/pic/logo131_60.jpg'></a><a class='a2' href='###'><img src='image/pic/logoF4_1.jpg'></a><div class='winClose'></div></div></div><div class='addEdit'><a href='###' class='aa'>设为默认地址</a></div></div>");
+			$('.myOrderBox').append($obj);
+			$('#consigneeName > span').html($str1+'****'+$str2);
+			$('#consigneeAddress').html(getCookie('sheng')+getCookie('shi')+getCookie('xian'));
+			$('#consigneeConfirm > span').eq(1).html(getCookie('sheng')+getCookie('shi')+getCookie('xian'));
+			addCookie('site',$('#consigneeName > span').html());
+			
+			$('.dizhi_k').css('display','none');
+		}else{
+			alert('亲~你家填茬了');
+		}
+		
+		
+		$('.aa').each(function(index){
+			$(this).on('click',function(){
+				$('.addNote').eq(index).css('display','block');
+				$('.addList').eq(index).siblings().find('.addNote').css('display','none');
+			});
+		});
+		$('.close').each(function(index){
+			$(this).on('click',function(){
+			$('.addList').eq(index).remove();
+			});
+		});
+//		alert($('#loc_province').val() + ' - ' + $('#loc_city').val() + ' - ' +  $('#loc_town').val()) ;
+		showLocation();
+//		window.location.reload();//刷新当前页面.
+	});
+	</script>
+
+</html>

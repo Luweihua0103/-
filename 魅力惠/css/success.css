@@ -1,0 +1,17 @@
+@charset "utf-8";
+
+.re_top{width:1000px; height:103px; margin:0 auto;}
+.re_left{float:left; margin-top:20px;}
+.re_right{float:right; margin-top:45px;}
+.re_main{width:800px;  margin:0 auto; margin-top:50px;}
+.re_mainTow{width:450px; margin:0 auto;}
+.okPic{width:73px; height:73px; background:url(../img/con_bg.png) no-repeat 0 -276px;width: 73px;height: 73px;float: left; margin-right: 20px;}
+.ok_index{background-color: #e83917; display: block; margin:20px 0 0 100px;width: 120px;color: #fff;font-size: 18px;font-weight: bold;border: none;border-radius: 5px;cursor: pointer;height: 40px;line-height: 40px;padding: 0px 5px; text-align: center;}
+
+
+
+
+
+
+
+

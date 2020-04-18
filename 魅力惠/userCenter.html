@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>完善个人资料</title>
+		<script src="js/public.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/userCenter.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="css/public.css" />
+		<link rel="stylesheet" type="text/css" href="css/userCenter.css" />
+	</head>
+	<body style="background:#fff;">
+<!--******************************header********************************-->
+<div class="header" id="head"></div>
+		<!--******************************proNav********************************-->
+		<div class="pro_nav">
+			<a href="user.html">我的账户</a> > <span>个人资料</span>
+		</div>
+		<!--******************************main********************************-->
+		<div class="user_main">
+			<!--**********左侧导航**************-->
+			<div class="user_left">
+				<div class="head_box">
+					<p><img src="img/user/userBear.jpg" /></p>
+					<p>130****3522 </p>
+					<p><i>v1</i>普通会员</p>
+					<span></span>
+				</div>
+				<div class="usernav_box">
+					<ul>
+						<li class="tit">交易记录</li>
+						<li><a href="formManage.html">我的订单</a></li>
+						<li><a href="###">退货管理</a></li>
+						<li class="tit">我的关注</li>
+						<li><a href="collect.html">我的收藏</a></li>
+						<li><a href="###">我的咨询</a></li>
+						<li><a href="###">我的评论</a></li>
+						<li class="tit">我的帐户</li>
+						<li><a href="user.html">帐户余额</a></li>
+						<li><a href="user.html">我的麦豆</a></li>
+						<li><a href="###">我的优惠券</a></li>
+						<li class="hover"><a href="userCenter.html">个人资料</a></li>
+						<li><a href="site.html">地址管理</a></li>
+						<li><a href="revamp.html">帐户安全</a></li>
+					</ul>
+				</div>
+			</div>
+			<!--*********************右侧内容************************-->
+		<div class="userRight">
+	<div class="userListDiv noTopBorder">
+		<div class="titDiv">
+			<h5>
+                    基本信息</h5>
+		</div>
+		<div class="myOrderBox" style="position: relative;">
+			<form action="doMyEdit.do" method="post">
+				<input value="0" id="isupdateName" type="hidden">
+				<table class="userData" border="0" cellpadding="0" cellspacing="0" width="100%">
+					<tbody>
+						<tr>
+							<td class="tdL" align="right" valign="top" width="20%">
+								会员级别：
+							</td>
+							<td width="80%">
+								<i>V1</i>普通会员
+							</td>
+						</tr>
+						<tr>
+							<td class="tdL" align="right" valign="top">
+								<em>*</em>用户名：
+								<input id="ischange" value="0" type="hidden">
+							</td>
+							<td>
+								<input class="userName" id="userName" onchange="isModifychange()" value="130****3522" maxlength="50" onblur="CheckLogoName()" type="text">
+								<input id="userName1" value="13021163522" name="MUserInfo.LogonName" type="hidden">
+								<input id="userMobile" value="13021163522" name="MUserInfo.Mobile" type="hidden">
+								<input id="userEmail" value="" name="MUserInfo.Email" type="hidden">
+								<span class="red" id="spanErr" style="display: none"><label id="lblErr"></label></span>
+								<input value="13021163522" id="txtName" type="hidden">
+							</td>
+						</tr>
+						<tr>
+							<td class="tdL" align="right" valign="top">
+								<em>*</em>我的头像：
+							</td>
+							<td>
+								<div class="divL userPic">
+									<img id="headPic" name="MUserInfo.HeadPic" src="img/user/mBear2.jpg" alt="">
+									<input name="MUserInfo.HeadPic" value="/Content/dgH/image/HeadPic/mBear2.jpg" id="MuserInfoHeadPic" onchange="change()" type="hidden">
+								</div>
+								<div id="ViewBig" class="ViewBig" style="display: none">
+									<img id="ViewBig_Img" style="display: none">
+								</div>
+								<div class="divL" style="margin-left: 15px;">
+									
+									 <input type="file" name="uploadFile" />
+									<p class="p1" id="fsUploadProgress">
+										仅支持JPG、GIF、PNG、JPEG、BMP格式，文件小于4M</p>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td class="tdL" align="right" valign="top">
+								<a id="babydiv"></a>
+								<em>*</em>性别：
+							</td>
+							<td id="box">
+								<span class="sBox hover">
+                                我是宝爸</span>
+								<span class="sBox">我是宝妈</span>
+								<span class="sBox">秘密</i></span>
+								<input name="MUserInfo.Sex" id="MuserInfoSex" value="1" onchange="change()" type="hidden">
+							</td>
+						</tr>
+						<tr>
+							<td class="tdL" align="right" valign="top">
+								邮箱：
+							</td>
+							<td>
+								<a href="http://www.gou.com/my/editEmail.do" class="yzA">立即验证</a> </td>
+						</tr>
+
+						<tr>
+							<td class="tdL" align="right" valign="top"><em>*</em>选择你感兴趣的东西：</td>
+							<td>
+
+								<div class="youLike">
+									<div id="youLikeChange" class="youLikeChange"><a href="javascript:;ChangePage()">换一组</a></div>
+									<!--<div id="youLikeDiv"  style="height:120px;overflow-y:hidden;">-->
+									<ul id="UserLikesTagUl">
+										<div id="1" style="display:none">
+											<li>
+												<input name="UserLikesTagIds" value="21" type="checkbox"><span>车床座椅</span></li>
+											<li>
+												<input name="UserLikesTagIds" value="22" type="checkbox"><span>宝宝出行小物件</span></li>
+											<li>
+												<input name="UserLikesTagIds" value="23" type="checkbox"><span>对抗姨妈</span></li>
+											<li>
+												<input name="UserLikesTagIds" value="24" type="checkbox"><span>家居用品</span></li>
+											<li>
+												<input name="UserLikesTagIds" value="25" type="checkbox"><span>吃货</span></li>
+											<li>
+												<input name="UserLikesTagIds" value="26" type="checkbox"><span>嘘嘘尿裤</span></li>
+											<li>
+												<input name="UserLikesTagIds" value="27" type="checkbox"><span>宝宝的口粮</span></li>
+											<li>
+												<input name="UserLikesTagIds" value="28" type="checkbox"><span>喂养小助手</span></li>
+											<li>
+												<input name="UserLikesTagIds" value="29" type="checkbox"><span>宝宝洗护</span></li>
+											<li>
+												<input name="UserLikesTagIds" value="30" type="checkbox"><span>宝宝营养品</span></li>
+											<li>
+												<input name="UserLikesTagIds" value="1" type="checkbox"><span>美食</span></li>
+										</div>
+										<div id="0" style="">
+											<li>
+												<input name="UserLikesTagIds" value="8" type="checkbox"><span>就爱这么妆</span></li>
+											<li>
+												<input name="UserLikesTagIds" value="10" type="checkbox"><span>洁面好物</span></li>
+											<li>
+												<input name="UserLikesTagIds" value="11" type="checkbox"><span>脸部护理</span></li>
+											<li>
+												<input name="UserLikesTagIds" value="13" type="checkbox"><span>童装童鞋</span></li>
+											<li>
+												<input name="UserLikesTagIds" value="14" type="checkbox"><span>新生儿用品</span></li>
+											<li>
+												<input name="UserLikesTagIds" value="15" type="checkbox"><span>我是孕妈</span></li>
+											<li>
+												<input name="UserLikesTagIds" value="16" type="checkbox"><span>产后束身</span></li>
+											<li>
+												<input name="UserLikesTagIds" value="17" type="checkbox"><span>美容瘦身</span></li>
+											<li>
+												<input name="UserLikesTagIds" value="31" type="checkbox"><span>防晒大作战</span></li>
+											<li>
+												<input name="UserLikesTagIds" value="18" type="checkbox"><span>孝敬父母</span></li>
+											<li>
+												<input name="UserLikesTagIds" value="19" type="checkbox"><span>男士用品</span></li>
+											<li>
+												<input name="UserLikesTagIds" value="20" type="checkbox"><span>益智玩具</span></li>
+										</div>
+										<div class="clear"></div>
+									</ul>
+									<!--</div>-->
+								</div>
+							</td>
+						</tr>
+
+						<tr>
+							<td align="right">
+							</td>
+							<td>
+								<a href="userCenter.html"></a><input value="提交" class="redBtn" style="padding: 8px 40px;" type="button">
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</form>
+		</div>
+	</div>
+	<!---->
+</div>
+			
+			
+			
+		</div>
+<!--******************************footer********************************-->
+<div id="footer"></div>
+	</body>
+</html>

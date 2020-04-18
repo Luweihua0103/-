@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>支付 -麦乐购 </title>
+		<script src="js/public.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/pay.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/cookie.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="css/public.css" />
+		<link rel="stylesheet" type="text/css" href="css/pay.css" />
+	</head>
+	<body style="background:#fff;">
+		<!--******************************header********************************-->
+		<div class="header" id="head"></div>
+		
+		<!--主体内容开始-->
+		<!--<div class="main">
+<p class="n1">当前位置：<a href="/">首页</a> > <a href="/My/index.do">我的账户</a> > <span class="p2">我的购物车</span></p>
+</div>-->
+<div class="settleTop">
+	<div class="settleTopMain">
+		<div class="m6goLogo">
+			<a href="http://www.gou.com/" title="麦乐购">
+				<img src="img/shopCar/logo.gif" width="260" height="83">
+			</a>
+			<div class="stepCarNew">
+				<ul>
+					<li id="stepCar_1_1" class="hover" style="display:none;">
+						<p>1</p><span>选定商品</span></li>
+					<li id="stepCar_1_2" class="hover">
+						<p>1</p><span>我的购物车</span></li>
+					<li id="stepCar_2" class="hover">
+						<p>2</p><span>订单确认</span></li>
+					<li id="stepCar_3" class="hover">
+						<p>3</p><span>付款</span></li>
+					<li id="stepCar_4">
+						<p>4</p><span>购买完成</span></li>
+				</ul>
+			</div>
+			<div class="clear"></div>
+		</div>
+	</div>
+</div>
+
+
+<!--弹层结束-->
+<div class="car_add">
+    <a href="http://www.gou.com/" target="_blank">首页</a>&gt;<a href="http://www.gou.com/My/index.do" target="_blank">我的帐户</a>&gt;<span>购买完成</span>
+</div>
+
+<div class="car_ps">
+    麦乐购温馨提示：购物时有难题？点我，马上为您解答。 <span style="cursor: pointer;" onclick="openwin('http://v1.live800.com/live800/chatClient/chatbox.jsp?companyID=487501&amp;configID=41606&amp;lan=zh&amp;jid=5415172950&amp;skillId=2698&amp;enterurl=goumaizixun');" title="咨询客服">
+        <img style="display:inline-block;" src="img/pay/car_lxkf.gif" title="联系客服" width="134" height="24"></span>
+</div>
+
+
+<!-- start JS遮罩层 -->
+<div id="fullbg"></div>
+<!-- end JS遮罩层 -->
+<div class="minHeight">
+    <form action="/Pay/GotoPay" id="form1" target="_blank">
+    <input value="Mozilla/5.0 (Windows NT 6.1; WOW64; rv:44.0) Gecko/20100101 Firefox/44.0" id="ua" name="ua" type="hidden">
+    <div class="car_payOK" style="margin-bottom: 10px;">
+    <p class="pok1">
+        您的订单已提交成功！</p>
+           <p class="pok2" style="color: #000; margin-top: 10px;">
+              请您在<span style="color: #F00; padding-right: 0px;">8</span>小时内完成支付，否则订单会自动取消。
+           </p>
+    <table class="car_payOK_table" border="0" cellpadding="0" cellspacing="0">
+            <tbody id="201512282133357910" data-ordertype="0" data-cycleorderstate="0" data-period="">
+                <tr>
+                    <td width="30%">
+                       订单号：201512282133357910
+                    </td>
+                    <td width="18%">
+                        总金额：<span class="black" id="black">￥229.00</span>
+                    </td>
+                    <td width="18%">
+                        使用账户金额：
+                            <span class="black">￥0.00</span>
+                    </td>
+                    <td width="18%">
+		                     还需支付：<span class="red">￥229.00</span>
+                    </td>
+                    
+                </tr>
+               
+            </tbody>       
+       
+      </table>
+</div>
+    <div class="car_payOK carPayBox" id="car_payOK" style="display: block;">
+
+    <ul id="tag">
+      <li style="display: block;" class="current" id="Payways">支付平台</li>
+      <li class="current" id="Global_Payway" style="display:none">支付平台</li>
+      <li style="display: block;" class="" id="bankCard">储蓄卡支付
+      </li>
+      <li style="display: block;" class="" id="expressPayCredit">信用卡支付
+      <div class="note2"></div>
+      </li>
+
+   </ul>
+    <div id="tagContent" class="mgcontbox">
+      <div class="mgx_div" id="div_payType_zfpt" style="display:block; clear:both;">
+
+            
+
+          
+         
+      </div>
+
+      <div class="mgx_div" id="Global_div_payType_zfpt" style="clear: both; display: none;">
+           <li id="li_GlobalAliPay" onclick="onSelectFun('GlobalAliPay','zfpt');" title="国际支付宝支付">
+               <input value="GlobalAliPay" name="PayWay" id="GlobalAliPay" type="radio">
+               <span id="spanStyle_GlobalAliPay" class="bk1 zfb on"></span>
+           </li>
+
+      </div>
+      <!--支付平台完成-->
+		<a href="index.html"><input class="pay_btn" name="button" id="button" value="回到首页" type="button"></a>
+		
+		
+		
+		<!--******************************footer********************************-->
+			<div id="footer"></div>
+	</body>
+</html>

@@ -1,0 +1,78 @@
+@charset "utf-8";
+
+.clear{ clear:both;}
+.clear:after{content:'';clear:both;display:block; }
+.clear{zoom:1;}
+i,em{ font-style:normal;}
+.divL{ float:left;}
+.divR{ float:right;}
+.gray{ color:#999;}
+.red{ color:#cc1d00;}
+.usernav_box li.hover{ background:#f1f1f1 url(../img/cHeadPic.png) no-repeat -169px -58px; }
+
+.pro_nav{width:990px; border-top:1px solid #000; height:40px; margin:0 auto; line-height: 40px;}
+.pro_nav a{color:cornflowerblue;}
+.pro_nav a:hover{color: #B61B1F; text-decoration: underline;}
+/* user public css */ 
+.head_box a{font-size:12px; color:#444; text-decoration:none;font-family: "宋体",SimSun; }
+.head_box a:hover{ color:#cc1d00;}
+.userLeft{ float:left; width:170px;}
+.userRight{float:right; width:820px;}
+.userListDiv{ border:1px solid #dedede; border-top:2px #cc1d00 solid; margin-bottom:20px;}
+.userListDiv .titDiv{ border-bottom:1px solid #dedede; height:30px; background:#f7f7f7; line-height:30px; }
+.userListDiv .titDiv h5{ width:400px; float:left; display:inline-block; line-height:30px; font-size:14px; color:#333; font-weight:normal; padding-left:15px;}
+.userListDiv .titDiv h5 span{ margin-left:15px; font-size:12px; color:#cc1d00;}
+.userListDiv .titDiv a.rr{ display:inline-block; width:300px; text-align:right;padding-right:20px; float:right;}
+/*------------------------------主体----------------------------------*/
+.user_main{width:990px; min-height: 600px; border-top:2px solid #ec7d6a; margin:0 auto;}
+.user_left{float:left; width:170px; -border:1px solid #ccc;}
+.head_box{background-color: #f1f1f1;height: 142px;text-align: center;padding-top: 10px;position: relative;z-index: 0;}
+.head_box p img{width:74px; height:74px; border-radius: 50%; margin:0 auto 10px;}
+.head_box p{line-height: 22px;}
+.head_box p i{font-style: normal;display: inline-block;width: 18px;height: 16px;background: #cc1d00;line-height: 16px;text-align: center;
+font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;font-size: 11px;color: #fff;}
+.head_box span{width:7px; height:161px; background:url(../img/cHeadPic.png) no-repeat;position: absolute;top: -2px;left: 0px;}
+.usernav_box{width: 162px;margin-left: 7px;border-top:none; border: 1px solid #ddd;}
+.usernav_box ul{padding: 20px 15px 15px 30px;}
+.usernav_box ul li{line-height: 26px;text-indent: 24px;font-size: 12px;color: #444;}
+.usernav_box ul li a{color: #444;}
+.usernav_box ul li a:hover{color:#B61B1F}
+.usernav_box ul .tit{padding-top: 15px;text-indent: 0px;font-weight: bold;}
+
+.myAdd{ padding:15px;}
+.minHeight{ min-height:530px;}
+
+
+.myAdd{ padding:15px;}
+.myAdd p{ color:#ff6b52; line-height:30px;}
+.myAdd td{ padding:8px 5px; color:#000;}
+.myAdd td span{ padding-left:10px; color:#ff6b52;}
+.myAdd td span.gray{ color:#999;}
+.myAdd td input,.myAdd td select{ border:1px solid #ccc; height:24px; line-height:24px;vertical-align:middle; }
+.myAdd td textarea{border:1px solid #ccc; vertical-align:middle;}
+.myAdd td input.tj{ background:url(../images/user_other_cont.gif) no-repeat -180px -151px; width:67px; height:28px; cursor:pointer; border:none; line-height:normal; font-size:14px; color:#fff;}
+.myAdd_list{ margin-top:20px;}
+.myAdd_list li{ height:40px; background-color:#f2f2f2; border-bottom:1px solid #e4e4e4; line-height:40px; padding:0px 10px; color:#000; margin-bottom:15px;}
+.myAdd_list li p{ display:inline; padding-right:25px;}
+.myAdd_list li p a{ color:#C00; text-decoration:none;}
+.myAdd_list li p a:hover{ color:#666;}
+.chaq_td_line {border-bottom: 1px dashed #CCC;}
+.myAdd a {color: #06C;text-decoration: none;}
+.chaq_td_tit{font-size: 14px;font-family: arial,Microsoft Yahei; text-align:right;}
+.chaq_td_tit i{ background:url(../image/userHeadPic.png?v=20150416) no-repeat -124px -140px; width:32px; height:32px; margin-right:5px; vertical-align:middle; display:inline-block;}
+.myAdd td.chaq_td_tex {color: #666; padding-left:20px;}
+.myAdd td .mmBtn{ padding:0px 30px; height:34px; line-height:34px;}
+.myAdd td i{ color:#F00; font-size:14px;}
+.myAdd td input.sms {width: 130px;height: 36px;
+ display: inline-block;line-height: 36px;text-align: center;color: #444;font-size: 12px; border:none; margin-left:8px; border:1px solid #999; background:#eee;}
+.myAdd p.gray{ color:#999;}
+.myAdd p.p_yz2 {font-family: arial,Microsoft Yahei;color: #000;font-size: 14px;line-height: 24px;padding-left: 30px;}
+.myAdd p.p_yz2 span {font-weight: bold;font-size: 15px;color: #000; padding-left:0px;}
+.mdSendNote{ position:absolute; background:url(../image/userHeadPic.png?v=20150416) no-repeat -156px -140px; width:102px; height:25px; top:4px; left:25px;}
+
+
+.rePasswordOk{ border:1px solid #ffdac6; background:#fff9f6; padding:10px 20px; font-size:14px; color:#e52100; font-weight:bold;}
+.userRight input.redBtn {background-color: #e83917;
+padding:8px 20px;color: #fff;font-size: 14px;font-weight: bold;border: none;border-radius: 3px;cursor: pointer;}
+.myAdd td.chaq_td_tex {color: #666; padding-left:20px;}
+.myAdd td .mmBtn{ padding:0px 30px; height:34px; line-height:34px;}

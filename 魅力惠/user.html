@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>帐户首页</title>
+		<script src="js/public.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/user.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="css/public.css" />
+		<link rel="stylesheet" type="text/css" href="css/user.css" />
+	</head>
+
+	<body style="background:#fff;">
+		<!--******************************header********************************-->
+		<div class="header" id="head"></div>
+		<!--******************************proNav********************************-->
+		<div class="pro_nav">
+			<a href="user.html">我的账户</a> > <span>账户首页</span>
+		</div>
+		<!--******************************main********************************-->
+		<div class="user_main">
+			<!--**********左侧导航**************-->
+			<div class="user_left">
+				<div class="head_box">
+					<p><img src="img/user/userBear.jpg" /></p>
+					<p>130****3522 </p>
+					<p><i>v1</i>普通会员</p>
+					<span></span>
+				</div>
+				<div class="usernav_box">
+					<ul>
+						<li class="tit">交易记录</li>
+						<li><a href="formManage.html">我的订单</a></li>
+						<li><a href="###">退货管理</a></li>
+						<li class="tit">我的关注</li>
+						<li><a href="collect.html">我的收藏</a></li>
+						<li><a href="###">我的咨询</a></li>
+						<li><a href="###">我的评论</a></li>
+						<li class="tit">我的帐户</li>
+						<li class="hover"><a href="user.html">帐户余额</a></li>
+						<li><a href="user.html">我的麦豆</a></li>
+						<li><a href="###">我的优惠券</a></li>
+						<li><a href="userCenter.html">个人资料</a></li>
+						<li><a href="site.html">地址管理</a></li>
+						<li><a href="revamp.html">帐户安全</a></li>
+					</ul>
+				</div>
+			</div>
+			<!--**********左侧导航**************-->
+			<div class="user_right">
+				<div class="growBox">
+					<!--*********************个人信息 end*******************-->
+					<div class="rightGrow">
+						<ul class="rightGrow_ul">
+							<li>帐户余额：<span><i>¥</i>0.00</span></li>
+							<li>麦豆：<span>20</span></li>
+							<li>优惠券：<span>5</span></li>
+						</ul>
+						<div class="growDiv">
+							<div class="growNote" style="left: 5px">
+								还差1001成长值
+								<br />可晋升V2会员
+							</div>
+							<div class="stripGrowGray"></div>
+							<div class="stripGrowBgGreen" style="width: 30px;"></div>
+							<div class="striPoint">
+								<ul>
+									<li class="green">V1</li>
+									<li style="left: 150px;">V2</li>
+									<li style="left: 270px;">V3</li>
+									<li style="left: 390px;">V4</li>
+									<li style="left: 510px;">V5</li>
+								</ul>
+							</div>
+							<div class="striPoint">
+								<div style="position:absolute; left:40px; top:76px;">0</div>
+								<div style="position:absolute; left:150px; top:76px;">1000</div>
+								<div style="position:absolute; left:270px; top:76px;">5000</div>
+								<div style="position:absolute; left:385px; top:76px;">10000</div>
+								<div style="position:absolute; left:510px; top:76px;">25000</div>
+							</div>
+							<a href="###" class="growA">会员级别说明 >></a>
+						</div>
+					</div>
+					<div class="rightMy">
+						<div class="myTitBox">我的特权</div>
+						<div class="myCont">
+							<div style="display: none;" class="arrLeft"></div>
+							<div class="ccav">
+								<ul style="width: 240px; left: 0px;">
+									<li class="AddSend"></li>
+									<li class="BabyFeedingTeacher"></li>
+									<li class="ScoreChange"></li>
+									<li class="UserService"></li>
+									<li class="Magazines"></li>
+									<li class="upV2"><span>升级享受更多会员特权</span></li>
+								</ul>
+							</div>
+							<div style="display: none;" class="arrRight"></div>
+						</div>
+					</div>
+				</div>
+				<!--*************************我的订单**************************-->
+				<div class="userListDiv">
+					<div class="titDiv">
+						<h5>我的订单</h5>
+						<a href="###" class="rr">查看所有订单 &gt;&gt;</a>
+					</div>
+					<div class="myOrderBox">
+						<!--**************商品tit************-->
+						<table class="myOrderTit" width="100%" border="0" cellpadding="0" cellspacing="0">
+							<tbody>
+								<tr>
+									<td width="45%" align="center">
+										商品
+									</td>
+									<td width="10%" align="center">
+										收货人
+									</td>
+									<td width="15%" align="center">
+										订单金额
+									</td>
+									<td width="15%" align="center">
+										订单状态
+									</td>
+									<td width="15%" align="center">
+										操作
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						<!--**************商品明细列表*****************-->
+						<table class="myOrderList" id="201512282039154450" width="100%" border="0" cellpadding="0" cellspacing="0">
+							<thead>
+								<tr>
+									<td colspan="5">
+										<span class="boxL">
+		                                                    订单号：<a href="###" target="_blank">201512282039154450 </a>
+		                				</span>
+										<span class="boxL">
+		                					&nbsp;&nbsp;
+		               					</span>
+										<span class="boxR">2015/12/28 20:39:15</span>
+									</td>
+								</tr>
+							</thead>
+							<tbody>
+
+								<tr>
+									<td width="45%">
+										<div class="divGoods">
+											<a href="###" target="_blank" class="img">
+												<img src="img/user/42.jpg" title="【补充钙质 更易吸收】澳洲Healthy Care羊奶咀嚼片300粒（海外版）"></a>
+										</div>
+										<div class="divGoods">
+											<p class="p1"><a  href="###" target="_blank"> 【补充钙质 更易吸收】澳洲Healthy Care羊奶咀嚼片300粒（海外版）</a></p>
+											<p class="p2">规格：瓶</p>
+											<div class="divGoodsNum">x1</div>
+										</div>
+									</td>
+									<td rowspan="1" valign="top" width="10%" align="center">
+										<span> <a href="###" style="cursor:default">qweqw</a></span>
+									</td>
+									<td rowspan="1" valign="top" width="15%" align="center">
+										<span class="price" id="OrderPrice_201512282039154450">￥90.00</span>
+										<span class="note">
+                							在线支付
+                						</span>
+									</td>
+									<td rowspan="1" valign="top" width="15%" align="center">
+										<span><a href="###">新订单</a></span> <span><a href="###" target="_blank">订单详情</a></span>
+
+									</td>
+
+									<td rowspan="1" valign="top" width="15%" align="center">
+										<span><a href="###" target="_self" class="btnRed">去支付</a></span>
+										<span><a href="###">取消订单</a> </span>
+
+										<!--判断是否上传证件-->
+										<span><a href="###" target="_self">上传证件</a></span>
+									</td>
+								</tr>
+
+							</tbody>
+						</table>
+					</div>
+				</div>
+				<!--*************************邀请朋友返现**************************-->
+				<div class="userListDiv">
+					<div class="titDiv">
+						<h5>
+                    邀请朋友返现金</h5>
+					</div>
+					<div class="myFriend">
+						<div class="divL">
+							<input class="tex" name="webUrl" id="webUrl" value="http://www.gou.com/iu1226014" readonly="readonly" type="text">
+							<input class="btn" id="webClipboard" name="webClipboard" value="复制" type="button">
+						</div>
+						<div class="divR mySend">
+							<div>
+								分享给站外好友：</div>
+							<div class="jiathis_style" style="margin-top:3px" onmouseover="setShare('麦乐购-全球母婴正品折扣网，提供全球畅销品牌的母婴用品，美容护肤，营养品，奶粉，辅食，纸尿裤，喂养用品，洗护，礼品等。正品保证，折扣多多！麦乐购，带给您足不出户的全球精品网上直购的乐趣！','http://www.gou.com/iu1226014')">
+								<a title="分享到新浪微博" class="jiathis_button_tsina"><span class="jiathis_txt jtico jtico_tsina"></span></a><a title="分享到QQ空间" class="jiathis_button_qzone"><span class="jiathis_txt jtico jtico_qzone"></span></a>
+								<a title="分享到开心网" class="jiathis_button_kaixin001"><span class="jiathis_txt jtico jtico_kaixin001"></span></a><a title="分享到人人网" class="jiathis_button_renren"><span class="jiathis_txt jtico jtico_renren"></span></a><a title="分享到腾讯微博" class="jiathis_button_tqq"><span class="jiathis_txt jtico jtico_tqq"></span></a>
+								<a
+								title="分享到搜狐微博" class="jiathis_button_tsohu"><span class="jiathis_txt jtico jtico_tsohu"></span></a>
+							</div>
+						</div>
+						<div class="clear">
+						</div>
+						<p>被邀请人首次购物超过100元，您和被邀请人同时分别获得<span>10元现金</span>。此后被邀请人购物，您可获得<span>同等购物麦豆奖励</span>。</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!--******************************header********************************-->
+		<div id="footer"></div>
+	</body>
+
+</html>

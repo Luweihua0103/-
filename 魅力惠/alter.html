@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<!--
+	作者：287650576@qq.com(闫超威)
+	描述：麦乐购
+-->
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>修改密码</title>
+		<script src="js/public.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/register.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="css/public.css"/>
+		<link rel="stylesheet" type="text/css" href="css/alter.css"/>
+	</head>
+	<body style="background:#fff; color:#000;">
+<!--******************************top*********************************-->
+<div class="re_top">
+	<a href="index.html"><img class="re_left" src="img/register/logo.gif" /></a>
+	<img class="re_right" src="img/register/top1.png" />
+</div>
+
+<div class="box600" id="userMessage">
+    <div class="lossStep">
+        <ul>
+            <li class="hover"><i>1</i>填写邮箱/手机号</li>
+            <li id="li_Hover"><i>2</i>验证身份</li>
+            <li><i>3</i>设置新密码</li>
+            <li><i>4</i>完成</li>
+        </ul>
+    </div>
+    <div class="lossMain">
+        <div>
+            <label>
+                邮箱/手机号：</label>
+            <input value="13021163522" id="userName" placeholder="请输入邮箱/手机号码" title="请输入邮箱/手机号码" onblur="Check(this.value)" type="text">
+            <p class="focusTex" id="userNameErro"></p>
+        </div>
+        <div>
+            <label>
+                验证码：</label>
+            <input value="0295" id="code" class="code"  maxlength="4" title="请输入验证码" placeholder="请输入验证码" type="text"><!--<em
+                id="erroImg" style="display: none"></em>--><!--错误的图标<em class="error"></em>-->
+            	<span class="code_bg">1d2s</span>
+            	<a class="code_change" href="###">换一张</a>
+            <p id="Error_code" class="focusTex"></p>
+        </div>
+        <div>
+            <input value="下一步" class="btn" onclick="GoNext()" type="button">
+        </div>
+    </div>
+</div>
+
+
+<!--*******************************bottom******************************-->
+<div id="bottom">
+	
+</div>
+
+
+
+
+	</body>
+</html>

@@ -1,0 +1,86 @@
+@charset "utf-8";
+
+.clear{ clear:both;}
+.clear:after{content:'';clear:both;display:block; }
+.clear{zoom:1;}
+i,em{ font-style:normal;}
+.divL{ float:left;}
+.divR{ float:right;}
+.gray{ color:#999;}
+.red{ color:#cc1d00;}
+.usernav_box li.hover{ background:#f1f1f1 url(../img/cHeadPic.png) no-repeat -169px -58px; }
+
+.pro_nav{width:990px; border-top:1px solid #000; height:40px; margin:0 auto; line-height: 40px;}
+.pro_nav a{color:cornflowerblue;}
+.pro_nav a:hover{color: #B61B1F; text-decoration: underline;}
+/* user public css */ 
+.head_box a{font-size:12px; color:#444; text-decoration:none;font-family: "宋体",SimSun; }
+.head_box a:hover{ color:#cc1d00;}
+.userLeft{ float:left; width:170px;}
+.userRight{float:right; width:820px;}
+.userListDiv{ border:1px solid #dedede; border-top:2px #cc1d00 solid; margin-bottom:20px;}
+.userListDiv .titDiv{ border-bottom:1px solid #dedede; height:30px; background:#f7f7f7; line-height:30px; }
+.userListDiv .titDiv h5{ width:400px; float:left; display:inline-block; line-height:30px; font-size:14px; color:#333; font-weight:normal; padding-left:15px;}
+.userListDiv .titDiv h5 span{ margin-left:15px; font-size:12px; color:#cc1d00;}
+.userListDiv .titDiv a.rr{ display:inline-block; width:300px; text-align:right;padding-right:20px; float:right;}
+/*------------------------------主体----------------------------------*/
+.user_main{width:990px; min-height: 600px; border-top:2px solid #ec7d6a; margin:0 auto;}
+.user_left{float:left; width:170px; -border:1px solid #ccc;}
+.head_box{background-color: #f1f1f1;height: 142px;text-align: center;padding-top: 10px;position: relative;z-index: 0;}
+.head_box p img{width:74px; height:74px; border-radius: 50%; margin:0 auto 10px;}
+.head_box p{line-height: 22px;}
+.head_box p i{font-style: normal;display: inline-block;width: 18px;height: 16px;background: #cc1d00;line-height: 16px;text-align: center;
+font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;font-size: 11px;color: #fff;}
+.head_box span{width:7px; height:161px; background:url(../img/cHeadPic.png) no-repeat;position: absolute;top: -2px;left: 0px;}
+.usernav_box{width: 162px;margin-left: 7px;border-top:none; border: 1px solid #ddd;}
+.usernav_box ul{padding: 20px 15px 15px 30px;}
+.usernav_box ul li{line-height: 26px;text-indent: 24px;font-size: 12px;color: #444;}
+.usernav_box ul li a{color: #444;}
+.usernav_box ul li a:hover{color:#B61B1F}
+.usernav_box ul .tit{padding-top: 15px;text-indent: 0px;font-weight: bold;}
+
+/*20141225我的订单 平台项目*/
+.myOrderBox{padding:15px;}
+.myOrderBox table{ border-spacing:0px; border-collapse: collapse;}
+.myOrderBox .myOrderTit{ background-color:#f1f1f1; border:1px solid #dfdfdf; line-height:28px; color:#444; font-size:12px;}
+.myOrderBox .myOrderList{ margin-top:10px; color:#444;} 
+.myOrderBox .myOrderList td{border:1px solid #dfdfdf; padding:8px 4px;}
+.myOrderBox .myOrderList thead td{background-color:#f1f1f1; line-height:30px; color:#888; font-size:12px;}
+.myOrderBox .myOrderList thead td{ padding:0px; line-height:32px; height:32px; padding:0px 5px;}
+.myOrderBox .myOrderList thead td span.boxL{float:left; padding-right:20px;}
+.myOrderBox .myOrderList td a{ font-family:Verdana, Geneva, sans-serif; font-size:12px; color:#000;}
+.myOrderBox .myOrderList td a.red{ color:#cf2e13;}
+.myOrderBox .myOrderList td a:hover{ color:#cf2e13; text-decoration:none;}
+.myOrderBox .myOrderList thead td span.boxL em{ color:#cf2e13;}
+.myOrderBox .myOrderList thead td span.boxR{float:right; padding-right:5px;font-family:Verdana, Geneva, sans-serif; font-size:13px; color:#777;}
+.myOrderBox .myOrderList tbody td .divGoods{float:left; position:relative;}
+.myOrderBox .myOrderList tbody td .divGoodsNum{ position:absolute; top:5px; left:260px; color:#999; font-family:Verdana, Geneva, sans-serif}
+.myOrderBox .myOrderList tbody td .divGoods img{ width:50px; height:50px;}
+.myOrderBox .myOrderList tbody td .divGoods a.img{ border:1px solid #bbb;width:50px; height:50px; display:block;}
+.myOrderBox .myOrderList tbody td .divGoods a.img:hover{ border:1px solid #999;}
+.myOrderBox .myOrderList tbody td .divGoods p.p1{ padding-left:10px; line-height:16px; max-height:32px; width:230px; overflow:hidden;}
+.myOrderBox .myOrderList tbody td .divGoods p.p2{ padding-left:10px; line-height:24px; color:#999;width: 260px;height: 24px;overflow: hidden;}
+.myOrderBox .myOrderList tbody td span{ display:block; line-height:18px;}
+.myOrderBox .myOrderList tbody td span.price{ font-family:Verdana, Geneva, sans-serif; color:#cf2e13; font-size:12px; font-weight:bold;}
+.myOrderBox .myOrderList tbody td span.priceG{color:#666; font-size:12px;}
+.myOrderBox .myOrderList tbody td span.note{ color:#999;}
+.myOrderBox .myOrderList tbody td span a.btnRed{ padding:3px 10px; background-color:#cc4024; border:1px solid #9c1a00; color:#fff; text-align:center; display:inline-block;}
+.myOrderBox .myOrderList tbody td span a.btnBlue{ padding:3px 10px; background-color:#48b4ec; border:1px solid #3a86b6; color:#fff; text-align:center; display:inline-block; }
+.myOrderBox .myOrderList tbody td span a.btnGray{ padding:3px 10px; background-color:#eee; border:1px solid #c5c5c5; color:#666; text-align:center; display:inline-block;}
+.myOrderBox .subOrder{ margin-top:10px;}
+.myOrderBox .subOrder p{color:#666; line-height:16px; }
+.myOrderBox .subOrder p.note{ background:url(../image/userHeadPic.png?v=20150416) no-repeat -18px -101px; padding-left:18px; line-height:30px;}
+.myOrderBox .subOrder .myOrderList{ margin-top:0px;}
+
+/* 我的订单 */
+.titDiv span.myOrder{ display: inline-block; background:#fff; padding:0px 25px; border-right:1px solid #dedede;line-height:30px; height:31px; position:relative; font-size:14px; color:#cc1d00; }
+.titDiv span a{ font-size:14px; padding-left:25px;}
+
+.userRight input.redBtn {background-color: #e83917;
+padding:8px 20px;color: #fff;font-size: 14px;font-weight: bold;border: none;border-radius: 3px;cursor: pointer;}
+
+
+
+
+/* 需放在最下边的公共样式 */
+.noTopBorder{border-top:none;}

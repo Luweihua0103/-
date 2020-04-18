@@ -1,0 +1,33 @@
+@charset "utf-8";
+
+.lo_top{width:1000px; height:103px; margin:0 auto;}
+.lo_left{float:left; margin-top:20px;}
+.lo_right{float:right; margin-top:45px;}
+.lo_main{width:960px; height:600px; margin:0 auto;}
+.lo_bg{float:left; margin-top:30px;}
+.lo_mainTow{width:290px; float:left; margin-top:30px; padding:20px 40px; border:1px solid #ccc; border-top:2px solid #B82F17;}
+.lo_mainTow h3{float: left;font-size: 22px;color: #444;font-weight: normal;position: relative;}
+.lo_mainTow .lo_R{float: right;display: block;line-height: 24px;width: 160px;text-align: right; color: #000;}
+.lo_mainTow .lo_R a{color:#999;}
+.lo_form{width:290px; float:left;margin-top:20px;}
+.lo_form ul{margin-top:20px;}
+.lo_mainTow a:hover{color:#03A4FE;}
+.lo_form ul li{position: relative;}
+.lo_form ul li label{width:32px; height:32px; position: absolute; top:0; left:0; }
+.lo_form ul li .lo_user{background:url(../img/con_bg.png) no-repeat 0 -52px;}
+.lo_form ul li .lo_psw{background:url(../img/con_bg.png) no-repeat 0 0;}
+.lo_form ul li input{border: 1px solid #dedede;color: #999;font-size: 14px;height: 30px;line-height: 30px; padding:0 5px;}
+.lo_form ul li .re_public{width:240px; padding-left:40px;}
+.lo_form ul li .focusTxt{line-height: 24px; color: #ff6b52; height: 24px;}
+.lo_form ul li .code_yan{width:100px; padding-left:5px;}
+.code_bg{width:85px; height:28px; background:url(../img/register/code_bg.jpg); text-align: center; line-height: 28px; font-size: 18px; letter-spacing: 8px; margin:0 5px;}
+.code_bg,.code_yan{float:left;}
+.code_change{line-height: 28px;}
+.lo_form ul li .lo_submit{background-color: #e83917;width: 290px;margin-top: 5px;color: #fff;font-size: 22px;height: 40px;line-height: 40px;border: none;border-radius: 5px;cursor: pointer;}
+.lo_other{margin-top:20px; color:#999;}
+.lo_form ul li .lo_other a{background: url(../img/con_bg.png) no-repeat;width: 20px;height: 20px;text-indent: -9999px;display: inline-block;vertical-align: middle; margin: 0px 6px;}
+.lo_form ul li .lo_other .lo_qq{background-position: -26px -128px;}
+.lo_form ul li .lo_other .lo_alipay{background-position: -106px -128px;}
+.lo_form ul li .lo_other .lo_360{background-position: -147px -382px;}
+.lo_form ul li .lo_other .lo_sina{background-position: -66px -128px;}
+

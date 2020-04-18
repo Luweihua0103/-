@@ -1,0 +1,115 @@
+@charset "utf-8";
+
+.clear{ clear:both;}
+.clear:after{content:'';clear:both;display:block; }
+.clear{zoom:1;}
+i,em{ font-style:normal;}
+.divL{ float:left;}
+.divR{ float:right;}
+.gray{ color:#999;}
+.red{ color:#cc1d00;}
+.usernav_box li.hover{ background:#f1f1f1 url(../img/cHeadPic.png) no-repeat -169px -58px; }
+
+.pro_nav{width:990px; border-top:1px solid #000; height:40px; margin:0 auto; line-height: 40px;}
+.pro_nav a{color:cornflowerblue;}
+.pro_nav a:hover{color: #B61B1F; text-decoration: underline;}
+/* user public css */ 
+.head_box a{font-size:12px; color:#444; text-decoration:none;font-family: "宋体",SimSun; }
+.head_box a:hover{ color:#cc1d00;}
+.userLeft{ float:left; width:170px;}
+.userRight{float:right; width:820px;}
+.userListDiv{ border:1px solid #dedede; border-top:2px #cc1d00 solid; margin-bottom:20px;}
+.userListDiv .titDiv{ border-bottom:1px solid #dedede; height:30px; background:#f7f7f7; line-height:30px; }
+.userListDiv .titDiv h5{ width:400px; float:left; display:inline-block; line-height:30px; font-size:14px; color:#333; font-weight:normal; padding-left:15px;}
+.userListDiv .titDiv h5 span{ margin-left:15px; font-size:12px; color:#cc1d00;}
+.userListDiv .titDiv a.rr{ display:inline-block; width:300px; text-align:right;padding-right:20px; float:right;}
+/*------------------------------主体----------------------------------*/
+.user_main{width:990px; min-height: 600px; border-top:2px solid #ec7d6a; margin:0 auto;}
+.user_left{float:left; width:170px; -border:1px solid #ccc;}
+.head_box{background-color: #f1f1f1;height: 142px;text-align: center;padding-top: 10px;position: relative;z-index: 0;}
+.head_box p img{width:74px; height:74px; border-radius: 50%; margin:0 auto 10px;}
+.head_box p{line-height: 22px;}
+.head_box p i{font-style: normal;display: inline-block;width: 18px;height: 16px;background: #cc1d00;line-height: 16px;text-align: center;
+font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;font-size: 11px;color: #fff;}
+.head_box span{width:7px; height:161px; background:url(../img/cHeadPic.png) no-repeat;position: absolute;top: -2px;left: 0px;}
+.usernav_box{width: 162px;margin-left: 7px;border-top:none; border: 1px solid #ddd;}
+.usernav_box ul{padding: 20px 15px 15px 30px;}
+.usernav_box ul li{line-height: 26px;text-indent: 24px;font-size: 12px;color: #444;}
+.usernav_box ul li a{color: #444;}
+.usernav_box ul li a:hover{color:#B61B1F}
+.usernav_box ul .tit{padding-top: 15px;text-indent: 0px;font-weight: bold;}
+
+
+
+
+
+/* 个人资料 */
+.userData{ width:750px; margin:0px auto;}
+.userData td{padding:15px 0px; padding-left:10px;}
+.userData td.tdL{ line-height:30px; color:#444;}
+.userData td i{font-style: normal;
+display: inline-block;
+width: 18px;
+height: 16px;
+background: #cc1d00;
+line-height: 16px;
+text-align: center;
+font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+font-size: 11px;
+color: #fff;
+-webkit-border-radius: 10%;
+-ms-border-radius: 10%;
+-moz-border-radius: 10%;
+-o-border-radius: 10%;
+border-radius: 10%;
+margin-right: 5px;}
+.userData td input.userName{ height:24px; line-height:24px; border:1px solid #ccc; padding:0px 8px; color:#666; margin-right:10px;}
+.userData td span.red{ display:inline-block; vertical-align:middle; color:#ff6b52;}
+.userData td span i.error{ background:url(../image/userHeadPic.png?v=20150416) no-repeat -18px -106px; width:15px; height:20px; display:inline-block; vertical-align:middle;}
+.userData td input.btn1{height: 28px;line-height: 28px;padding: 0px 5px;}
+.userData td p.p1{ line-height:30px; color:#666;}
+.userData td span.sBox{ border:1px solid #ccc; padding:0px 15px; display:inline-block; color:#666; margin-right:15px; cursor:pointer; height:30px; line-height:30px;}
+.userData td span.sBox.hover{ border:2px solid #cc1d00; color:#cc1d00; position:relative;}
+.userData td span.sBox.hover i{ background:url(../image/userHeadPic.png?v=20150416) no-repeat -284px -140px; width:16px; height:16px; display:inline-block; position:absolute; right:-10px; bottom:-4px;}
+.userData td span.yzNote{ background:url(../image/userHeadPic.png?v=20150416) -265px -161px no-repeat; padding-left:14px; color:#666;margin-left: 5px;}
+.userData td a.yzA{ color:#06c;}
+.userData td .userPic img{ width:75px;height:75px; border:1px solid #ccc;}
+.userData td em{ color:#F00; display:inline-block; padding:0px 5px; vertical-align:middle; font-size:14px;}
+
+.userData td .imgView{ clear:both;}
+.userData td .imgView span{ display:inline-block; padding-top:5px; padding-right:10px;}
+.userData td .imgView span em{ display:block;text-align:center;}
+.userData td .imgView span em a{ margin-right:5px; color:#999; font-size:12px;}
+.userData td .imgView span img{ width:90px; height:60px; border:1px solid #eee; cursor:pointer;}
+.userData td .imgViewBig{ padding-top:10px; clear:both;}
+.userData td .imgViewBig img{ max-width:300px; height:auto;}
+
+.userListDiv{ border:1px solid #dedede; border-top:2px #cc1d00 solid; margin-bottom:20px;}
+.userListDiv .titDiv{ border-bottom:1px solid #dedede; height:30px; background:#f7f7f7; line-height:30px; }
+.userListDiv .titDiv h5{ width:400px; float:left; display:inline-block; line-height:30px; font-size:14px; color:#333; font-weight:normal; padding-left:15px;}
+.userListDiv .titDiv h5 span{ margin-left:15px; font-size:12px; color:#cc1d00;}
+.userListDiv .titDiv a.rr{ display:inline-block; width:300px; text-align:right;padding-right:20px; float:right;}
+
+
+
+/* 我的订单 */
+.titDiv span.myOrder{ display: inline-block; background:#fff; padding:0px 25px; border-right:1px solid #dedede;line-height:30px; height:31px; position:relative; font-size:14px; color:#cc1d00; }
+.titDiv span a{ font-size:14px; padding-left:25px;}
+
+.userRight input.redBtn {background-color: #e83917;
+padding:8px 20px;color: #fff;font-size: 14px;font-weight: bold;border: none;border-radius: 3px;cursor: pointer;}
+
+
+/*个人中心-资料填写-感兴趣的*/
+
+.myOrderBox table .youLike{ width:580px; position:relative;}
+.myOrderBox table .youLikeChange{height:40px; position:absolute; right:10px; top:0px;}
+.myOrderBox table .youLikeChange a{ background:url(../image/youlike.png) no-repeat -50px 4px #f9f9f9; color:#999; width:42px; height:22px; line-height:22px; border:1px solid #eee;display:block;padding-left:24px;}
+.myOrderBox table .youLikeChange a:hover{ border:1px solid #FFDBDC; background:url(../image/youlike.png) no-repeat -50px 4px #FFF2F5;}
+.myOrderBox table .youLike li{ float:left; width:120px; padding-right:10px; line-height:30px;height:30px; overflow:hidden; margin-bottom:10px;}
+.myOrderBox table .youLike li span{ border:1px solid #ddd;padding:5px;}
+.myOrderBox table .youLike input{ vertical-align:middle; margin-right:5px; border:1px solid #ccc; background:#fff;}
+
+
+/* 需放在最下边的公共样式 */
+.noTopBorder{border-top:none;}

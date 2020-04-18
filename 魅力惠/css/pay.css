@@ -1,0 +1,98 @@
+@charset "utf-8";
+
+
+.clear{ clear:both;font-size:0px;line-height:0px; height:0px;}
+
+/*订单结算样式*/
+.settleTop{ width:100%; height:110px; border-bottom:1px solid #d10000;}
+.settleTopMain{ width:1000px; margin:0 auto;}
+.settleTopMain .m6goLogo{ padding-top:20px;}
+.settleTopMain .m6goLogo img{ float:left;}
+.settleTopMain .stepCar{ float:right; margin-top:25px;}
+.settleTopMain .stepCar li{width: 128px;height: 35px;
+background-image: url(../image/settlePic.gif);background-position: 0px -36px;float: left;margin-left: 3px;font-family: arial,Microsoft Yahei;font-size: 16px;text-align: center;line-height: 35px;color: #999;font-weight: bold;}
+
+.settleTopMain .stepCarNew{ float:right; margin-top:25px;}
+.settleTopMain .stepCarNew li{ float:left; width:150px; text-align:center;}
+.settleTopMain .stepCarNew li p{ background:url(../img/shopCar/car518step.png) no-repeat; width:150px; height:30px; text-align:center; font-family:Verdana, Geneva, sans-serif; font-size:15px; font-weight:bold; color:#fff; line-height:30px;}
+.settleTopMain .stepCarNew li.hover p{ background:url(../img/shopCar/car518step.png) no-repeat 0px -40px; }
+.settleTopMain .stepCarNew li span{ color:#999; line-height:20px; font-family:'microsoft yahei',Verdana,Arial,Helvetica,sans-serif; font-size:15px;}
+.settleTopMain .stepCarNew li.hover span{ color:#cf2e13;}
+
+
+
+.car_add{ width:1000px;margin:0 auto; height:40px; border-bottom:1px solid #CCC; line-height:40px; color:#333; font-size:12px;}
+.car_add span{color:#d00000; margin:0px 3px;}
+.car_add a{ font-size:12px; color:#333; text-decoration:none; margin:0px 3px;}
+.car_add a:hover{color:#d00000; text-decoration:none;}
+
+.car_ps{ height:24px;font-family:arial,Microsoft Yahei; font-size:14px; color:#b51111;  margin:0 auto; width:1000px; margin-top:15px; line-height:24px;}
+
+.minHeight{ min-height:500px;}
+.car_payOK{ margin:0 auto; width:1000px; margin-top:50px; margin-bottom:120px; text-align:center; border-bottom:1px dashed #ccc; padding-bottom:20px; }
+.car_payOK p { margin-top:20px;}
+.car_payOK p.pok1{ font-family:arial,Microsoft Yahei; font-size:16px; font-weight:bold; color:#ff4800;}
+.car_payOK p.pok2,.car_payOK p.pok3{ font-size:12px; color:#666; line-height:20px;}
+.car_payOK p.pok2 span{ font-family:arial,Microsoft Yahei; font-size:14px; color:#000; padding-right:20px; font-weight:bold; }
+.car_payOK p.pok3 span{ font-family:arial,Microsoft Yahei; font-size:16px; color:#c30;font-weight:bold; }
+.car_payOK p.pok2 a{ color:#dd1600; text-decoration:none; margin:0px 50px; display:inline-block;}
+.car_payOK p.pok2 a:hover{ color:#333; text-decoration:none;}
+.car_payOK p.pok3 a{ color:#017ba8; text-decoration:none; margin:0px 50px; display:inline-block; background-color:#d7f5f0; padding:1px 5px;}
+.car_payOK p.pok3 a:hover{ color:#dd1600; text-decoration:none;background-color:#fff;}
+.car_payOK p.pokBtn{ margin-top:30px;}
+
+
+/*下单成功页面*/
+
+.car_payOK_table{ width:1000px; margin:0px auto; margin-top:20px;}
+.car_payOK_table tr:nth-child(odd){ background-color:#f4f4f4;line-height:20px;}
+.car_payOK_table td{border: 1px solid #ccc;  padding: 10px;}
+.car_payOK_table td span.black{ color:#000; font-weight:bold;font-family:"微软雅黑";}
+.car_payOK_table td span.red{ color:#c00; font-weight:bold;font-family:"微软雅黑";}
+.car_payOK_table td img.pic64{ float:left; margin-right:5px;}
+.car_payOK_table td span.payOk{ background:url(../images/payOK.png) no-repeat left; width:60px;padding-left: 20px;}
+.car_payOK p.pok2 span.payOk{ background:url(../images/payOK_1.png) no-repeat left; width:60px;padding-left: 20px; font-size:12px; font-weight:normal;}
+.car_payOK_table td a{ height:18px; width:80px; text-align:center; color:#fff; font-size:12px; border:1px solid #3691e4; display:block; background-color:#66b6ff; margin:0px auto; line-height:18px; text-decoration:none;}
+.car_payOK_table td a.img{ margin:auto; width:auto; height:auto; border:none;}
+
+
+
+/*下单成功增加支付块*/
+.carPayBox{ margin-top:30px; border:none; width:1000px;}
+.carPayBox #tag{ background:#fff; height:36px;}
+.carPayBox #tag li{list-style:none; float:left; text-align:center; color:#777;width:140px; line-height:36px; cursor: pointer;font-family:"微软雅黑"; font-size:16px; margin-right:5px; border:1px solid #c4c4c4; border-bottom:none; position:relative; z-index:8;}
+.carPayBox #tag .current{ color:#fff; background:#eab5a5; border:none;border:1px solid #eab5a5; border-bottom:none; }
+.carPayBox #tag li .note1{ background:url(../images/pay_ps.gif) no-repeat; width:116px; height:23px; position:absolute; top:-15px; left:15px; z-index:9;}
+.carPayBox #tag li .note2{ background:url(../images/pay_ps.gif) no-repeat 0px -27px; width:116px; height:23px; position:absolute; top:-15px; left:15px; z-index:9;}
+.carPayBox #tagContent div{ border:1px solid #eab5a5;height:auto; display:none; margin-left:0px!important; width:1000px; padding-top:15px;}
+
+.mgcontbox {
+    border-top: none;
+    height: auto;
+    _height: 1%;
+    overflow: none;
+    padding-bottom: 20px;
+}
+table tbody span.gray{ color:#999; display:block; text-decoration:line-through; font-size:12px; font-weight:normal;}
+tbody span{font-family: Verdana, Geneva, sans-serif;color: #444;font-size: 14px;font-weight: bold;}
+tbody img{ width:50px; height:50px; overflow:hidden; border:1px solid #bbb; }
+tbody .divGoods{ float:left; width:auto; position:relative;}
+tbody .divGoods span.none{ color:#444; margin:20px 5px 0px 0px; display:inline-block; font-size:12px; font-weight:normal;}
+tbody .divGoods input{ margin:15px 10px 0px 0px;}
+tbody .divGoods i{ font-style:normal; background:url(../image/settlePic.gif) -98px -167px; width:23px;height:23px; display:block; margin:15px 10px 0px 0px;}
+table td{ border:1px solid #ccc;}
+table thead td{background-color:#eee; line-height:24px; color:#444; font-size:12px; padding:0px 5px; text-align:center;}
+table tbody td{line-height:30px; color:#444; font-size:12px; padding:0px 5px; text-align:center;}
+table tbody td span{ font-family:Verdana, Geneva, sans-serif; padding-left:5px; vertical-align:middle; font-size:14px; font-weight:bold; color:#e52100;}
+table tbody td input{ vertical-align:middle;}
+
+table td{ border:1px solid #ccc;}
+table thead td{background-color:#eee; line-height:24px; color:#444; font-size:12px; padding:0px 5px; text-align:center;}
+table tbody td{line-height:30px; color:#444; font-size:12px; padding:0px 5px; text-align:center;}
+table tbody td span{ font-family:Verdana, Geneva, sans-serif; padding-left:5px; vertical-align:middle; font-size:14px; font-weight:bold; color:#e52100;}
+table tbody td input{ vertical-align:middle;}
+
+
+
+
+.pay_btn{ border:none;background-image:url(../img/pay/car_goBtn.gif); width:164px; height:43px; background-position:0px -102px; text-align:center; font-family:arial,Microsoft Yahei; font-size:18px; font-weight:bold; color:#fff; cursor:pointer; margin-top:20px;}

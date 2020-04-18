@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<!--
+	作者：287650576@qq.com(闫超威)
+	描述：麦乐购
+-->
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>欢迎注册麦乐购用户</title>
+		<script src="js/public.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery.validate.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery.validate.messages_zh.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/register.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/cookie.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="css/public.css"/>
+		<link rel="stylesheet" type="text/css" href="css/register.css"/>
+	</head>
+	<body style="background:#fff; color:#000;">
+<!--******************************top*********************************-->
+<div class="re_top">
+	<a href="index.html"><img class="re_left" src="img/register/logo.gif" /></a>
+	<img class="re_right" src="img/register/top1.png" />
+</div>
+
+<div class="re_main">
+	<img class="re_bg" src="img/register/bg.jpg" />
+	<div class="re_mainTow">
+		<h3>新用户注册</h3>
+		<span class="re_R">已有麦乐购帐号，<a href="login.html">直接登录</a></span>
+		<form action="login.html" class="re_form" onsubmit="return logo()">
+			<ul>
+				<li>
+					<input type="text" id="tel" class="re_public" maxlength="11" title="请输入手机号码" placeholder="请输入手机号码" />
+					<p class="focusTxt" id="tel_txt"></p>
+				</li>
+				<li>
+					<input type="password" id="password" class="re_public" title="请输入密码" placeholder="请输入密码" />
+					<p class="focusTxt"></p>
+				</li>
+				<li>
+					<input type="password" id="passwordTow" class="re_public" title="请再次输入密码" placeholder="请再次输入密码" />
+					<p class="focusTxt"></p>
+				</li>
+				<li>
+					<input type="text" class="code code_yan" title="请输入验证码" placeholder="请输入验证码" />
+					<div class="code_bg">1d2s</div>
+					<a class="code_change" href="###">换一张</a>
+					<p class="focusTxt code_txt"></p>
+				</li>
+				<li>
+					<input type="text" class="code" title="短信校验码" placeholder="短信校验码" />
+					<a href="###" class="code_phone">获取短信校验码</a>
+					<p class="focusTxt"></p>
+				</li>
+			</ul>
+			<ul>
+				<li>
+					<input type="checkbox" checked="checked" class="re_check" />
+					已阅读并同意
+					<a href="###">《麦乐购注册协议及交易条款》</a>
+				</li>
+				<li>
+					<input class="re_submit" type="submit" value="立即注册"  />
+				</li>
+				<li class="re_voice">
+					收不到短信？请使用
+					<a href="###" style="color:#03A4FE;">语音验证</a>
+				</li>
+			</ul>
+		</form>
+	</div>
+	
+</div>
+
+
+<!--*******************************bottom******************************-->
+<div id="bottom">
+	
+</div>
+
+
+
+
+	</body>
+	
+	
+	
+</html>

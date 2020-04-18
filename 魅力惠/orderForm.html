@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>确认订单信息 -麦乐购 </title>
+		<script src="js/public.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/orderForm.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript" src="js/area.js"></script>
+		<script type="text/javascript" src="js/location.js"></script>
+		<script type="text/javascript" src="js/select2.js"></script>
+		<script type="text/javascript" src="js/select2_locale_zh-CN.js"></script>
+		<script src="js/cookie.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="css/public.css" />
+		<link rel="stylesheet" type="text/css" href="css/orderForm.css" />
+		<link href="css/common.css" rel="stylesheet"/>
+		<link href="css/select2.css" rel="stylesheet"/>
+	</head>
+
+	<body style="background:#fff;">
+		<!--******************************header********************************-->
+		<div class="header" id="head"></div>
+
+		<!--主体内容开始-->
+		<!--<div class="main">
+<p class="n1">当前位置：<a href="/">首页</a> > <a href="/My/index.do">我的账户</a> > <span class="p2">我的购物车</span></p>
+</div>-->
+	<div class="dizhi_k">
+		<div class="dizhi">
+		  <center>
+		    <select id="loc_province" style="width:120px;">
+		    </select>
+		    <select id="loc_city" style="width:120px; margin-left: 10px">
+		    </select>
+		    <select id="loc_town" style="width:120px;margin-left: 10px">
+		    </select>
+		    <br>
+		    <br>
+		    <br>
+		    <br>
+		    <input type="button" id="btnval" value="确定修改" style="padding:5px 15px;"/>
+		    <input type="button" id="btntext" value="取消" style="padding:5px 15px;" />
+		  </center>
+		</div>
+	</div>
+		<div class="settleTop">
+			<div class="settleTopMain">
+				<div class="m6goLogo">
+					<a href="http://www.gou.com/" title="麦乐购">
+						<img src="img/shopCar/logo.gif" width="260" height="83">
+					</a>
+					<div class="stepCarNew">
+						<ul>
+							<li id="stepCar_1_1" class="hover" style="display:none;">
+								<p>1</p><span>选定商品</span></li>
+							<li id="stepCar_1_2" class="hover">
+								<p>1</p><span>我的购物车</span></li>
+							<li id="stepCar_2" class="hover">
+								<p>2</p><span>订单确认</span></li>
+							<li id="stepCar_3">
+								<p>3</p><span>付款</span></li>
+							<li id="stepCar_4">
+								<p>4</p><span>购买完成</span></li>
+						</ul>
+					</div>
+					<div class="clear"></div>
+				</div>
+			</div>
+		</div>
+
+		<form id="orderForm" name="orderForm" method="post">
+			<!-- logo step end-->
+			<div class="settleMain">
+				<h4>订单确认</h4>
+				<div class="settleCont">
+					<script type="text/javascript" src="###"></script>
+					<!-- 遮罩层  -->
+					<div style="display: none; height: 1188px;" class="scratchMask"></div>
+					<input id="isLoadAddressList" value="0" type="hidden">
+					<!--已登录状态的收货地址 start-->
+					<h5>收货地址<a href="javascript:;" class="scratchBtn">修改</a></h5>
+					<div class="contDiv">
+						<p id="consigneeName"><span>130****3522</span></p>
+						<p id="consigneeAddress">北京北京市海淀区</p>
+						
+					</div>
+					<div class="addEdit" style="display: none;">
+						<span class="winClose"></span>
+						<div status="success" class="addList" id="addressList">
+							<div class="addList">
+								<ul>
+									<li class="">
+										<input name="addressInfo" id="addressInfo718856" type="radio">
+										<label for="addressInfo718856" title="【单击选中】qweqw">
+											qweqw 北京北京市 海淀区 qweqw
+										</label>
+										<span>130****3522</span> &nbsp;&nbsp;
+
+										<span>默认地址</span>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<!--地址列表 end-->
+						
+						<input status="success" class="addBtn" value="保存收货人信息" type="button">
+					</div>
+				
+					
+					<h5>
+身份证号码<a style="cursor:default">保税区海关政策要求，请填写收货人身份证</a>
+<div class="notesWin" id="aa" onmouseover="showTip('aa', 'show');" onmouseout="showTip('aa', 'hide');">
+<p>
+亲爱的用户，根据海关规定，保税区跨境直邮商品需要提交收货人本人的身份证号码。</p>
+<p style="display:none;">
+为了避免影响您正常收货，收货人姓名和身份证号码要同身份证保持一致，请认真填写哦。
+</p>
+</div>
+</h5>
+					<div class="contDiv">
+						<p>
+							<input class="add" name="IdCard" id="IdCard" placeholder="请填写收货人身份证" title="请填写收货人身份证" maxlength="18" type="text">
+							<em id="errorIdCard" style="display:none;">身份证号码不正确请重新输入</em>
+						</p>
+					</div>
+
+					<h5>支付方式</h5>
+					<div class="contDiv">
+						<p>
+							<input id="payWay0" name="payWay" value="0" checked="checked" type="radio">
+							<label for="payWay0">在线支付</label>
+						</p>
+					</div>
+
+					<h5>商品清单<a href="shopCar.html" class="back">返回购物车</a></h5>
+
+					<div id="incOrderDetailList">
+						<table class="tabListSettle" width="100%" border="0" cellpadding="0" cellspacing="0">
+							<thead>
+								<tr>
+									<td width="60%">
+										由麦乐购发货
+									</td>
+									<td width="15%" align="center">
+										单价
+									</td>
+									<td width="10%" align="center">
+										数量
+									</td>
+									<td width="15%" align="center">
+										小计
+									</td>
+								</tr>
+							</thead>
+							<tbody id="tabListSettle0" count="1">
+								
+							</tbody>
+							<tfoot>
+								<tr>
+									<td colspan="4" id="sellerPostage0">
+									</td>
+								</tr>
+							</tfoot>
+						</table>
+					</div>
+
+					<div class="couponDiv">
+						<p>
+							<a id="coupon_a"><img src="img/orderForm/settleConAdd.png">优惠券</a>
+							<span style="display: none;" id="wu">
+
+此订单暂无可用的优惠券
+
+</span>
+
+							<span id="you" style="">有<i id="usableCount">2</i>张优惠券供选择</span> <a class="aCouponT" href="javascript:;">有实体券或优惠券编码？</a>
+						</p>
+
+						<script type="text/javascript">
+							$(function() {
+								var oadd = document.getElementById("addQ");
+								$('.aCoupon').click(function() {
+									if (oadd.style.display == "block") {
+										oadd.style.display = "none";
+									} else {
+										oadd.style.display = "block";
+									}
+								});
+							});
+							$(function() {
+								var ocou = document.getElementById("couponList");
+								var ob = document.getElementById("coupon_a");
+								$('.aCouponT').click(function() {
+									$("#addQ").show();
+									var oControl = $(ob).children("img");
+									if (ocou.style.display == "block") {
+										ocou.style.display = "none";
+										oControl.attr("src", "img/orderForm/settleConAdd.png");
+										//                ob.innerHTML = '&lt;img src="/Content/dgH/image/settleConAdd.png"/&gt;' + "优惠券"
+									} else {
+										ocou.style.display = "block";
+										oControl.attr("src", "img/orderForm/settleConHide.png");
+										//                ob.innerHTML = '&lt;img src="/Content/dgH/image/settleConAdd.png"/&gt;' + "优惠券"
+									}
+								});
+							});
+						</script>
+
+						<script type="text/javascript">
+							$(function() {
+								var tag = document.getElementById("divTab").children; //获取Tag下的li，即Tag标签 
+								var content = document.getElementById("divCont").children; //获取Tag标签对应的内容 
+								content[0].style.display = "block"; //默认显示第一个标签的内容 
+								var len = tag.length;
+								for (var i = 0; i < len; i++) //无论点击谁都能实现当前显示，其余隐藏
+								{
+									tag[i].index = i;
+									tag[i].onclick = function() {
+										for (var n = 0; n < len; n++) {
+											tag[n].className = "coupon";
+											content[n].style.display = "none";
+										} //首先将全部的div隐藏
+										tag[this.index].className = "coupon hover";
+										content[this.index].style.display = "block";
+										if (this.index == 1) {
+											//                    $("#notavailable").show();
+											getCouponCombination(1);
+										} else {
+											getCouponCombination(0, 1);
+										}
+									}
+								}
+							});
+						</script>
+
+						<div id="couponList" class="couponCont" style="display:none;">
+
+							<div id="divTab">
+								<div class="coupon hover">可用优惠券(<span id="canuse">2</span>)</div>
+								<div class="coupon">不可用优惠券(<span id="cannotuse">3</span>)</div>
+							</div>
+
+							<div class="mjDiv">
+								<!--可用的-->
+								<div id="divCont">
+
+									<div style="display: block;">
+										<p><span id="youyhui">以下是此订单可用的优惠券</span><a class="aCoupon" href="javascript:;">有实体券或优惠券编码？</a>
+											<span class="couponHow">【了解<a target="_blank" href="http://www.gou.com/help/yhq.html">优惠券使用规则</a>】</span></p>
+
+										<p style="display:block;" id="addQ">
+											<input id="txtSN" name="txtSN" placeholder="请输入您的券号" maxlength="16" type="text">
+											<input id="verifyCodeDJ" name="verifyCodeDJ" placeholder="验证码" size="8" maxlength="4">
+											<img id="captchaDJ" alt="验证码" title="看不清楚？换一张！" src="%E7%A1%AE%E8%AE%A4%E8%AE%A2%E5%8D%95%E4%BF%A1%E6%81%AF%20-%E9%BA%A6%E4%B9%90%E8%B4%AD_files/verifyImgB.png" onclick="reloadCaptcha(1)">
+
+											<span onclick="reloadCaptcha(1)">换一张</span>
+
+											<input value="激活使用" class="btn" onclick="BindCouponToUser('checkout');" type="button">
+										</p>
+										<ul id="usable">
+
+											<li>
+												<input data="1" datatype="2" id="A16802928160773" onclick="useCouponMJDJ(this,'A16802928160773');" name="checkbox" type="checkbox">
+
+												<span class="red" style="width: 60px; display: inline-block;">￥28.00</span><span>满减券</span> <span>有效期至：2015-12-31</span> <span style="width: 325px;height: 30px; overflow: hidden;"> 营养品满200立减28元！（A16802928160773）</span> <span class="gary">【即将过期】</span></li>
+
+											<li>
+												<input datatype="2" id="A16802925136060" onclick="useCouponMJDJ(this,'A16802925136060');" name="checkbox" type="checkbox">
+
+												<span class="red" style="width: 60px; display: inline-block;">￥10.00</span><span>满减券</span> <span>有效期至：2015-12-31</span> <span style="width: 325px;height: 30px; overflow: hidden;"> 麦乐购全场满99元立减10元！(纸尿裤、第三方商家商品除外)（A16802925136060）</span>
+												<span
+												class="gary">【即将过期】</span>
+											</li>
+
+										</ul>
+									</div>
+
+									<!--不可用的-->
+									<div id="notavailable" style="display: none;">
+
+										<p>
+											<span>此处仅展示不符合本次订单商品使用的优惠券</span>
+											<span class="couponHow">【了解<a target="_blank" href="http://www.gou.com/help/yhq.html">优惠券使用规则</a>】</span>
+										</p>
+
+										<ul id="unUsable">
+
+											<li>
+
+												<span class="red" style="width: 60px; display: inline-block;">￥20.00</span><span>满减券</span> <span>有效期至：2015-12-31</span> <span style="width: 325px;height: 30px; overflow: hidden;"> 麦乐购进口奶粉20元立减券！（A16802924512944）</span> <span class="gary">【即将过期】</span></li>
+
+											<li>
+
+												<span class="red" style="width: 60px; display: inline-block;">￥20.00</span><span>满减券</span> <span>有效期至：2015-12-31</span> <span style="width: 325px;height: 30px; overflow: hidden;"> 宝宝用品(纸尿裤湿巾除外)满200立减20元！（A16802926572169）</span> <span class="gary">【即将过期】</span></li>
+
+											<li>
+
+												<span class="red" style="width: 60px; display: inline-block;">￥10.00</span><span>满减券</span> <span>有效期至：2015-12-31</span> <span style="width: 325px;height: 30px; overflow: hidden;"> 宝宝玩具满100立减10元！（A16802927926601）</span> <span class="gary">【即将过期】</span></li>
+
+										</ul>
+
+									</div>
+
+								</div>
+								<!--divCont  end-->
+
+							</div>
+
+						</div>
+
+					</div>
+
+					<div class="noteDiv">订单备注：
+						<input name="remark" id="orderRemark" maxlength="200" type="text">
+					</div>
+
+					<div class="orderMain" id="orderSummary">
+						<div class="orderList">
+							<span>商品总金额：</span> <em id="marketTotal" data-goodstotalprice="249.00">￥249.00</em>
+						</div>
+						<div class="orderList">
+							<span>商品优惠：</span> <em id="saveMoney" data-goodstotalprice="20.00">-￥20.00</em>
+						</div>
+						<div class="orderList" style="display:none;">
+							<span>商品小计：</span> <em id="goodsTotalPrice" data-goodstotalprice="229.00">￥229.00</em>
+						</div>
+						<div class="orderList" id="divPostage" style="position: relative;">
+							<span>
+<a style="cursor: text;" id="postageNotesTip"><i></i></a>
+国内运费：
+</span>
+							<div class="notesWin" id="postageNotes" style="display:block;">
+								纸尿裤满 3 包包邮，其他商品满188元包邮 </div>
+							<em id="postage" data-postage="8.0">￥8.00</em>
+						</div>
+						<div class="orderList" id="divSellerPostage" style="display:none;">
+							<span>商家运费：</span> <em id="sellerPostage" data-sellerpostage="0.0">￥0</em>
+						</div>
+						<div class="orderList" id="divSavePostage">
+							<span>运费减免：</span> <em id="savePostage" data-savepostage="8.0">-￥8.00</em>
+						</div>
+						<div class="orderList" id="divCutValue" style="display:none;">
+							<span>订单满减：</span> <em id="cutValue" data-cutvalue="0"> -￥0.00</em>
+						</div>
+						<div class="orderList" id="divCouponPrice" style="display:none;">
+							<span>优惠券：</span> <em id="couponPrice" data-couponprice="0">-￥0</em>
+						</div>
+						<div class="orderList" id="divOrderTotalPrice">
+							<span>订单总金额：</span>
+							<em id="orderTotalPrice" class="red" data-ordertotalprice="229.00">￥229.00</em>
+						</div>
+					</div>
+
+					<div class="clear">
+					</div>
+
+					<div class="defrayDiv">
+						<p class="p1">
+							应付总额：<span class="big" id="orderPaymentPrice" data-orderpaymentprice="229.00">￥229.00</span></p>
+						<p class="p2">
+							<label>获得麦豆<span id="giftPoint">11</span> </label>
+						</p>
+						<p class="p3" id="consigneeConfirm"><span>130****3522</span><span>北京北京市海淀区</span></p>
+						<p class="p4">
+							<input name="orderCouponCutSN" id="orderCouponCutSN" type="hidden">
+							<a href="pay.html"><input id="submitOrder" value="提交订单" type="button"></a>
+						</p>
+					</div>
+
+					<div class="clear">
+					</div>
+
+				</div>
+			</div>
+			<input name="isone" id="isone" value="1" type="hidden">
+
+			<!-- 遮罩层  -->
+			<div style="display: none; height: 1188px;" class="scratchMask" id="scratchMask"></div>
+
+			<!--******************************footer********************************-->
+			<div id="footer"></div>
+	</body>
+
+</html>

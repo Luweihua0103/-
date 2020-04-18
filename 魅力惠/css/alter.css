@@ -1,0 +1,64 @@
+@charset "utf-8";
+
+.re_top{width:1000px; height:103px; margin:0 auto;}
+.re_left{float:left; margin-top:20px;}
+.re_right{float:right; margin-top:45px;}
+.re_main{width:800px;  margin:0 auto; margin-top:50px;}
+.re_mainTow{width:450px; margin:0 auto;}
+.okPic{width:73px; height:73px; background:url(../img/con_bg.png) no-repeat 0 -276px;width: 73px;height: 73px;float: left; margin-right: 20px;}
+.ok_index{background-color: #e83917; display: block; margin:20px 0 0 100px;width: 120px;color: #fff;font-size: 18px;font-weight: bold;border: none;border-radius: 5px;cursor: pointer;height: 40px;line-height: 40px;padding: 0px 5px; text-align: center;}
+
+
+
+.box600{ min-height:600px;}
+.lossStep{ width:1000px; height:80px; border-bottom:2px solid #ccc; margin:0px auto;}
+.lossStep ul{ width:800px; padding-top:50px; margin:0 auto;}
+.lossStep li{ float:left; width:200px; text-align:center;  height:30px; line-height:30px; font-size:18px;color:#999; }
+.lossStep li.hover{ color:#e83917; border-bottom:2px solid #e83917;}
+.lossStep li.noLine{ border-bottom:none;}
+.lossStep li i{ width:27px; font-family:Verdana, Geneva, sans-serif; font-size:16px; font-weight:bold; color:#fff; display:inline-block; background:url(../image/tegPng.png) no-repeat 0px -228px; margin-right:3px; }
+.lossStep li i.last{ background-position:-259px -228px;}
+.lossStep li.hover i{ background-position: 0px -172px; }
+.lossStep li.hover i.last{ background-position: -258px -172px;}
+.lossMain{ width:800px; margin:0px auto;margin-top:50px;}
+.lossMain a{ color:#999; text-decoration:none;}
+.lossMain a:hover{ color:#128cff;}
+.lossMain div{ width:600px; margin:0 auto; margin-bottom:15px;}
+.lossMain label{ vertical-align:middle; display:inline-block; width:180px; text-align:right; font-size:14px; color:#444;}
+.lossMain input{ display:inline-block; width:280px; height:40px; line-height:40px; padding:0px 5px; font-size:14px; border:1px solid #ccc; color:#999; vertical-align:middle;}
+.lossMain p.focusTex{ line-height:24px;color:#ff6b52; height:24px; padding-left:184px;}
+.lossMain input.code{ width:100px; padding-left:8px;}
+.lossMain em{ background:url(../image/tegPng.png) no-repeat; width:15px; height:14px; vertical-align:middle; display:inline-block; margin:0px 5px;}
+.lossMain em.yes{ background-position: 0px -111px; }
+.lossMain em.error{ background-position: 0px -132px; }
+.lossMain input.btn{  background-color:#e83917; width: 120px;color: #fff;font-size: 18px;font-weight: bold; border:none;border-radius: 3px; cursor:pointer; margin-left:182px;}
+.lossMain input.btnEmail{  background-color:#e83917; width: 140px;color: #fff;font-size: 18px;font-weight: bold; border:none;border-radius: 3px; cursor:pointer; margin-left:50px; margin-right:10px;}
+.lossMain a.sms{ width:130px; height:41px; background:url(../image/tegPng.png) no-repeat 0px -373px; display:inline-block; line-height:41px; text-align:center; color:#444; font-size:12px;}
+.lossMain .divOk{ font-size:14px; color:#333;}
+.lossMain .divOk em{ background:url(../image/tegPng.png) no-repeat -135px -112px; width:32px; height:30px;}
+.lossMain .divBoxOk{ width:450px; margin:0px auto;}
+.lossMain .divBoxOk p{ font-size:14px; line-height:22px;}
+.lossMain .divBoxOk input{ margin:20px 0px 0px 0px;}
+.lossMain .okPic{ background:url(../image/tegPng.png) no-repeat 0px -276px; width:73px; height:73px; float:left; margin-right:20px;}
+.lossMain .errorPic{ background:url(../image/tegPng.png) no-repeat -86px -273px; width:82px; height:83px; float:left; margin-right:20px;}
+.lossMain .divWarn{  border:1px solid #ddd; height:44px; line-height:44px;font-size:14px; color:#444; text-align:center; margin-top:40px;}
+.lossMain .divWarn em{ background:url(../image/tegPng.png) no-repeat -178px -116px; width:23px; height:20px;}
+.lossMain .divWarn span{ color:#e83917;}
+.lossMain .yzTab{ height:35px; line-height:35px; width:600px;margin:0 auto; margin-top:30px;}
+.lossMain .yzTab .yzCard{ width:50%; float:left; text-align:center; font-size:14px; color:#999; background:url(../image/yzTab.png) 0px -45px; cursor:pointer;}
+.lossMain .yzTab .hover{ color:#e83917;background:url(../image/yzTab.png) no-repeat;}
+.lossMain #yzEmail p{ font-size:14px; color:#444; line-height:30px; text-align:center; margin-top:20px;}
+.lossMain .yzCont{ margin-top:15px;}
+.lossMain a.btnGary{ background:url(../image/btnGray.png) no-repeat; width:118px; height:33px; line-height:33px; text-align:center;color:#444; font-size:14px; margin-right:10px; display:inline-block;}
+
+.lossMain .yzCont label{width:100px; vertical-align:middle; }
+.lossMain .yzTab .yzEmailTit{ border-bottom:2px solid #e83917; font-size:14px; text-align:center;}
+.lossMain .yzTab .yzEmailTit em{ position:relative; background:url(../image/tegPng.png) no-repeat -29px -110px; width:10px; height:5px;top: 21px;left:35px; text-indent:-9999px;}
+.lossMain #yzEmail p.focusTex{ line-height:24px;color:#ff6b52; height:24px; text-align:left; margin-top:0px; font-size:12px;}
+
+#regImg{display: inline-block;}
+.code_bg{width:85px; height:40px; display: inline-block; background:url(../img/register/code_bg.jpg); 
+text-align: center; line-height: 36px; font-size: 18px; letter-spacing: 8px; margin:0 5px;}
+
+
+

@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>商品详情 - 麦乐购</title>
+		<script src="js/public.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/details.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/cookie.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="css/public.css" />
+		<link rel="stylesheet" type="text/css" href="css/details.css" />
+	</head>
+
+	<body style="background:#fff;">
+		<!--******************************header********************************-->
+		<div class="header" id="head" name="tr2"></div>
+
+		<div id="jia" ><img src="img/details/jia.gif"  /></div>
+		
+		<!--面包渣-->
+		<div class="breadcrumb shareW">
+			<a href="index.html" target="_blank">首页</a> &gt;
+			<a href="###" target="_blank">【值】8大保健品</a> &gt;
+			<span id="Span1" target="_blank">【高钙高铁】澳洲德运devondale全脂奶粉 1000g（2袋装）（海外版）</span>
+			<p></p>
+		</div>
+		<!--产品图片及参数-->
+		<div class="shareW productInfo">
+			<!--图-->
+
+			<div class="preview">
+
+				<div class="jqzoom" id="spec-n1">
+					<img class="jq_img" alt="" src="img/details/53.jpg" width="350" height="350">
+					<div class="mark"></div>
+					<div class="jqZoomPup"></div>
+					<div class="zoomdiv"><img class="bigimg" src="img/details/53.jpg" ></div>
+				</div>
+				<div id="spec-n5">
+					<div class="control" id="spec-left"></div>
+
+					<div id="spec-list">
+						<!--  2-->
+						<ul style="width: 122px; overflow: hidden;" class="list-h">
+							<li>
+								<img class="imgHover" src="img/details/53.jpg" onload="javascript:DrawImage(this,50,50);" width="50" height="50">
+							</li>
+							<li>
+								<img class="" src="img/details/54.jpg" onload="javascript:DrawImage(this,50,50);" width="50" height="50">
+							</li>
+						</ul>
+					</div>
+
+					<div class="control" id="spec-right"></div>
+				</div>
+
+				<!--<div class="addBox">
+			<ul>
+                <li>浏览：0次</li>
+                <li><a href="javascript:void(0);"  onclick="collectGoodsFun(32854);">收藏：24次</a></li>
+                <li style="float:right">赠送麦豆：11</li>
+			</ul>
+		</div>-->
+				<div class="addBox">
+					<ul>
+						<li class="sc"><a href="javascript:void(0);" onclick="collectGoodsFun(32854);">收藏商品：（24人气）</a></li>
+						<!--  点击后【收藏商品】改为【已收藏】  -->
+
+					</ul>
+				</div>
+
+			</div>
+			<div class="goodsName">
+				<h1>【高钙高铁】澳洲德运devondale全脂奶粉 1000g（2袋装）（海外版）</h1>
+				<span><i class="tr">0</i>德运来自澳大利亚天然牧场，奶粉口感纯正，天然牛奶，不含任何食品添加剂和防腐剂，全脂适合孕妇、儿童、学生和成人。
+        </span>
+			</div>
+			<!--参数-->
+			<div class="goodsPay">
+				<ul>
+
+					<li class="sumPriceNow bgGray">
+						<div class="dt" id="priceLabel">
+							特 卖 价：
+						</div>
+						<div class="dd countDd">
+							<!--sku属性-->
+							<input id="StockCount_NP" name="StockCount_NP" value="" type="hidden">
+							<font size="3px" color="#CC1D00">￥</font>
+							<span id="SGoodsPrice">289.00</span>
+							<div id="temai">
+								<div id="TimeCounter" class="countDown">
+									<em>剩余：</em>
+										<em class="day1"></em><i>:</i>
+										<em class="hour1"></em><i>:</i>
+										<em class="minute1"></em>
+										<em class="second1"></em>
+							
+							</div>
+
+							<p id="p_babyfvl">
+							</p>
+						</div>
+					</li>
+					<li class="sumPriceOld bgGray">
+						<div class="dt">麦乐购价：</div>
+						<div class="dd"><span style="text-decoration:line-through;" id="GoodsMallPrice">￥449.00</span></div>
+					</li>
+
+					<li class="sumPriceOld bgGray">
+						<div class="dt">市 场 价：</div>
+						<div class="dd"><span>$50.94 (￥324.00)</span></div>
+					</li>
+
+					<li class="sumSale bgGray">
+						<div class="dd">
+
+							<p>
+							</p>
+
+							<!--<p>System.Collections.Generic.List`1[System.String]</p>-->
+						</div>
+						<div class="clear"></div>
+					</li>
+
+					<li class="ass">
+						<span>累计销量：<em> 48  </em><i>|</i></span>
+						<span>累计评价：<em onclick="goComment(0);">2</em>  <i>|</i> </span>
+						<span>赠送麦豆：<em id="goodsScore">11</em></span></li>
+					
+					<li class="sumKind">
+						<div class="dt">属　　性：</div>
+						<div class="dd">
+							<span>规格：盒</span>
+						</div>
+					</li>
+					<!--段位属性显示-->
+					<!--段位属性显示结束-->
+
+					
+					<!--预售要恢复到原来的状态 by junfu 2015-2-26-->
+					<!--注释                                                                                             由麦乐购（香港）有限公司负责配送                                                                </span>
+                            </div>
+            </li>注释end-->
+					<form id="buyForm" name="buyForm">
+
+						<li class="sumChoose" name="propertyselect" style="display:none;">
+							<div class="dt">规格：</div>
+							<div class="dd">
+								<a id="pA_16_48" rel="16-48" href="javascript:void(0);" class="hover" onclick="SelectGoodsFun(16,48)"> 盒  </a>
+								<input id="pI_16_48" name="pI_16" checked="checked" value="16:48_规格：盒" style="display:none;" type="radio">
+							</div>
+						</li>
+
+						<li class="sumNum">
+							<div class="dt">购买数量：</div>
+							<div class="dd" id="dddiv">
+								<input id="isBuyNow" value=" 0" type="hidden">
+								<a id="subt" style="border-right:none;">-</a>
+								<input name="Amount" id="Amount" value="1" class="textNum" maxlength="2" data-maxbuycount="" style="ime-mode:disabled;" type="text">
+								<a id="add" style="border-left:none;">+</a>
+
+								<!--根据保税区优化新需求调整 2014-11-20 start -->
+								<span id="divStockCount" style="display:none;">
+                （库存<span id="stockCountSpan" class="stockCount">50</span>件）
+								</span>
+
+								<span id="div_outstock" style="display:none; text-indent:0px;">库存紧张</span>
+								<!--根据保税区优化新需求调整 2014-11-20 end -->
+
+								<p id="buyNowMsg" style="color:Red;padding-left: 15px;vertical-align: middle;display: inline-block;"></p>
+							</div>
+						</li>
+						<div style="clear:both;"></div>
+					</form>
+				</ul>
+				<input id="CycleGoodsName" name="CycleGoodsName" value="&lt;font color=&quot;red&quot;&gt;&lt;/font&gt;【保护心脏】澳洲Healthy Care CO Q10辅酶胶囊100粒（海外版）" type="hidden">
+				<!--库存数 By JUNFU.WANG-->
+				<input id="BaoshuiStock" name="BaoshuiStock" value="50" type="hidden">
+				<!--库存数 By JUNFU.WANG-->
+				<input id="BaoshuiLimit" name="BaoshuiLimit" value="29" type="hidden">
+				<!--单人未支付限购件数 By JUNFU.WANG-->
+				<input id="BaoshuiLimit_Default" name="BaoshuiLimit_Default" value="30" type="hidden">
+				<!--单人限购件数 By JUNFU.WANG-->
+				<input name="Hid_IsAddFromBaoshui" id="Hid_IsAddFromBaoshui" value="0" type="hidden">
+				<input id="temaiId" name="temaiId" value="14697" type="hidden">
+				<input name="Hid_selectedNorms" id="Hid_selectedNorms" value="16:48" type="hidden">
+
+				<input name="Hid_selectedNormCatalogNames" id="Hid_selectedNormCatalogNames" value="规格 " type="hidden">
+				<input id="showHaveSelected" name="showHaveSelected" value="0" type="hidden">
+				<div></div>
+				<div class="buyBtn">
+					<span id="divBtn">
+                
+                                <a id="buyA"  href="###" class="btnMain" style="width:160px;height:42px;line-height:42px">加入购物车</a>
+                                </span>
+
+					<!--一听试购-->
+
+					<!--国际直邮-->
+				</div>
+
+				<p id="reminder" class="reminder" style="display:none; color:Red;">温馨提示：该商品仅限个人自用，不能进行二次销售哦</p>
+				<!--窄屏begin-->
+				<div class="buyRest">
+					<p class="p1" title="中华保险正品保证"><i style="background:url(/content/dgh/image/mainCon.png) no-repeat -28px -116px;"></i>中华保险正品保证</p>
+					<p class="p2" title="百分之百安心产品"><i style="background:url(/content/dgh/image/mainCon.png) no-repeat -54px -116px;"></i>百分之百安心产品</p>
+					<p class="p3" title="专业营养师喂养咨询"><i style=" background:url(/content/dgh/image/mainCon.png) no-repeat -80px -116px;"></i>专业营养师喂养咨询</p>
+				</div>
+				<!--窄屏end-->
+				<p class="reminder"> <span class="sL">温馨提示：
+        </span> <span class="sR" id="reminderR"><i>由麦乐购（香港）有限公司负责配送</i></span>
+				</p>
+
+				<!--宽屏begin-->
+				<div class="bzBox">
+					<h3 style=" background: url(img/details/pro_20150518.png) no-repeat;">麦乐购 购安全</h3>
+					<p class="p1" title="中华保险正品保证"><i style="background:url(img/details/mainCon.png) no-repeat -28px -116px;"></i>中华保险正品保证</p>
+					<p class="p2" title="百分之百安心产品"><i style="background:url(img/details/mainCon.png) no-repeat -54px -116px;"></i>百分之百安心产品</p>
+					<p class="p3" title="专业营养师喂养咨询"><i style=" background:url(img/details/mainCon.png) no-repeat -80px -116px;"></i>专业营养师喂养咨询</p>
+				</div>
+				<!--宽屏end-->
+
+			</div>
+			<!--goodsPay end-->
+			<div class="clear"></div>
+		</div>
+		<!--productInfo end-->
+
+		<!--最佳搭配-->
+		<input id="divBtn_3_1" value="1" type="hidden">
+		<div style="height:261px;" class="matchBox shareW" id="div_gbmList">
+			<h3>最佳搭配</h3>
+			<div class="matchLeft">
+				<img src="img/details/50.jpg" alt="【保护心脏】澳洲Healthy Care CO Q10辅酶胶囊100粒">
+				<p><font color="red"></font>【保护心脏】澳洲Healthy Care CO Q10辅酶胶囊100粒（海外版）</p>
+			</div>
+
+			<div id="mdiv" class="matchCen">
+				<ul style="width: 600px;">
+					<!--这里的宽度以200px为单位，成倍递增或递减-->
+
+					<li onclick="HitsPosition(1087,0,0,0);"><i></i>
+						<div class="goodsList">
+							<a href="http://www.gou.com/product_13091.html" title="【调理肠胃 排毒养颜】美国康宝莱Herbalife草本芦荟营养粉（芒果味）120g">
+								<img src="img/details/43.jpg"
+								alt=""></a>
+							<p class="p1">
+								<a href="details.html"><font color="red"></font>【调理肠胃 排毒养颜】美国康宝莱Herbalife草本芦荟营养粉（芒果味）120g（海外版）</a></p>
+							<input name="id_91004" id="id_91004" value="91004" type="hidden">
+							<input name="price_91004" id="price_91004" value="228.00" type="hidden">
+							<input name="marketPrice_91004" id="marketPrice_91004" value="322.00" type="hidden">
+							<input name="goodsNorm_91004" id="goodsNorm_91004" value="16:38|60:782" type="hidden">
+							<input name="bestMatchGoodsId_91004" id="bestMatchGoodsId_91004" value="13091" type="hidden">
+							<input name="discountAmount_91004" id="discountAmount_91004" value="0.00" type="hidden">
+							<p class="p2">
+								<input name="GoodsBestMatchID_91004" id="GoodsBestMatchID_91004" value="" checked="checked" onclick="ifcheckbox(91004,229.00,this.id);" type="checkbox"> ￥228.00
+							</p>
+						</div>
+					</li>
+					<li onclick="HitsPosition(1087,0,0,0);"><i></i>
+						<div class="goodsList">
+							<a href="http://www.gou.com/product_17261.html" title="意大利意利ILLY深焙咖啡粉250g">
+								<img src="img/details/44.jpg"
+								alt=""></a>
+							<p class="p1">
+								<a href="http://www.gou.com/product_17261.html"><font color="red"></font>意大利意利ILLY深焙咖啡粉250g</a></p>
+							<input name="id_91948" id="id_91948" value="91948" type="hidden">
+							<input name="price_91948" id="price_91948" value="99.00" type="hidden">
+							<input name="marketPrice_91948" id="marketPrice_91948" value="142.00" type="hidden">
+							<input name="goodsNorm_91948" id="goodsNorm_91948" value="16:75" type="hidden">
+							<input name="bestMatchGoodsId_91948" id="bestMatchGoodsId_91948" value="17261" type="hidden">
+							<input name="discountAmount_91948" id="discountAmount_91948" value="0.00" type="hidden">
+							<p class="p2">
+								<input name="GoodsBestMatchID_91948" id="GoodsBestMatchID_91948" value="" checked="checked" onclick="ifcheckbox(91948,229.00,this.id);" type="checkbox"> ￥99.00
+							</p>
+						</div>
+					</li>
+					<li onclick="HitsPosition(1087,0,0,0);"><i></i>
+						<div class="goodsList">
+							<a href="http://www.gou.com/product_18125.html" title="韩国农协KOREA NONGHYUP蜂蜜柚子茶1000g">
+								<img src="img/details/45.jpg"
+								alt=""></a>
+							<p class="p1">
+								<a href="http://www.gou.com/product_18125.html"><font color="red"></font>韩国农协KOREA NONGHYUP蜂蜜柚子茶1000g</a></p>
+							<input name="id_91008" id="id_91008" value="91008" type="hidden">
+							<input name="price_91008" id="price_91008" value="45.00" type="hidden">
+							<input name="marketPrice_91008" id="marketPrice_91008" value="62.00" type="hidden">
+							<input name="goodsNorm_91008" id="goodsNorm_91008" value="16:75" type="hidden">
+							<input name="bestMatchGoodsId_91008" id="bestMatchGoodsId_91008" value="18125" type="hidden">
+							<input name="discountAmount_91008" id="discountAmount_91008" value="0.00" type="hidden">
+							<p class="p2">
+								<input name="GoodsBestMatchID_91008" id="GoodsBestMatchID_91008" value="" onclick="ifcheckbox(91008,229.00,this.id);" type="checkbox"> ￥45.00
+							</p>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="matchRight">
+				<p class="p1">
+					<span id="GoodsCount">3</span>件商品组合购买</p>
+				<p class="p2">
+					购买总价：<span class="red">￥<label id="AllPrices" name="AllPrices">556.00</label></span></p>
+				<p class="p2" style="display: none">
+					市场价：￥
+					<label id="AllMarketPrices" name="AllMarketPrices">788.00</label>
+				</p>
+				<p class="p2" style="display: none">
+					获得优惠：￥
+					<label id="ALLYouHui" name="ALLYouHui">212.00</label>
+				</p>
+				<p class="p2" id="js3" style="display:none">立即节省：<span>￥<label id="AllDiscountAmount" name="AllDiscountAmount">0.00</label></span></p>
+
+				<span id="BestMatchBuy_1"><a href="javascript:void(0);" onclick="BestMatchBuy();">立即购买</a></span>
+			</div>
+			<div class="clear">
+			</div>
+		</div>
+		<!--最佳搭配 end-->
+<div class="details_photo">
+	<img src="img/details/photo.jpg"/>
+</div>
+
+
+
+		<!--******************************footer********************************-->
+		<div id="footer"></div>
+	</body>
+
+</html>

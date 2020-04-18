@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		.box{
+			transform-style:preserve-3d;
+			position:relative;
+			margin: 500px;
+			/*perspective: 1200px;*/
+			animation: name 5000s linear Infinite ;
+			/*transform: rotateY(45deg) rotateX(45deg);*/
+		}
+		.box1{
+			transform-style:preserve-3d;
+			transform: translateZ(-50px) translateX(50px) translateY(50px);
+		}
+		@keyframes name {
+			100%{
+				transform: rotateX(360000deg) rotateY(360000deg);
+			}
+		}
+		.number{
+			border:2px solid red;
+			height:300px;
+			width:300px;
+			position:absolute;
+			top:0;
+			font-size: 100px;
+			color: #fff;
+			line-height:300px;
+			text-align: center;
+			transform-style:preserve-3d;	
+			box-shadow: 0px 0px 100px rgba(0,0,0,.3);
+			opacity: .5;
+		}
+		.numone,.aone{
+			background: linear-gradient(-45deg, #f321d7, #ffec61);
+		}
+		.numtwo,.atwo{
+			transform:rotateX(-90deg);
+			transform-origin: top;
+			background: linear-gradient(-45deg, #f403d1, #64b5f6);
+		}
+		.numthree,.athree{
+			transform:rotateY(90deg);
+			transform-origin: left;
+			background: linear-gradient(-45deg, #24ff72, #9a4eff);
+		}
+		.numfour,.afour{
+			transform:rotateX(90deg);
+			transform-origin: bottom;
+			background: linear-gradient(-45deg, #f403d1, #64b5f6);
+		}
+		.numfive,.afive{
+			transform:rotateY(-90deg);
+			transform-origin: right;
+			background: linear-gradient(-45deg, #24ff72, #9a4eff);
+		}
+		.numsix{
+			transform: translateZ(-300px);
+			/*transform-origin: right;*/
+			background: linear-gradient(-45deg, #f403d1, #64b5f6);
+		}
+		.asix{
+			transform: translateZ(-200px);
+			/*transform-origin: right;*/
+			background: linear-gradient(-45deg, #f403d1, #64b5f6);
+		}
+		.aa{
+			width: 200px;
+			height: 200px;
+			line-height: 200px;
+			position:absolute;
+			top:0;
+			opacity:.5;
+			font-size: 50px;
+			color: #fff;
+			line-height:200px;
+			text-align: center;
+		}
+		
+	</style>
+</head>
+<body>
+	<div class="box">
+		<div class="number numone">1</div>
+		<div class="number numtwo">2</div>
+		<div class="number numthree">3</div>
+		<div class="number numfour">4</div>
+		<div class="number numfive">5</div>
+		<div class="number numsix">6</div>
+		<div class="box1">
+			<div class="aa aone">1</div>
+			<div class="aa atwo">2</div>
+			<div class="aa athree">3</div>
+			<div class="aa afour">4</div>
+			<div class="aa afive">5</div>
+			<div class="aa asix">6</div>
+		</div>
+	</div>
+</body>
+</html>
